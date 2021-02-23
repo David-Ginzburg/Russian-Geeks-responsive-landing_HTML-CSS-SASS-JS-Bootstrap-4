@@ -1,0 +1,30 @@
+.title {
+    font-size: calc(var(--fs-body) * 1.714);
+    font-weight: var(--fw-extra-bold);
+    &_yellow {
+        color: var(--clr-warmyellow);
+    }
+    &_big {
+        font-size: calc(var(--fs-body) * 2);
+        font-weight: var(--fw-bold);
+    }
+    &_middle {
+        font-size: calc(var(--fs-body) * 1.142);
+        font-weight: var(--fw-extra-bold);
+    }
+    &_small {
+        font-size: var(--fs-body);
+        font-weight: var(--fw-extra-bold);
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        &_yellow {
+            color: var(--clr-light);
+        }
+        &_big {
+            font-size: var(--fs-body);
+        }
+    }
+}

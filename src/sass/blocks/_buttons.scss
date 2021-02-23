@@ -1,0 +1,36 @@
+.btn {
+    width: fit-content;
+    padding: 0.5em 1em;
+    background-color: var(--clr-warmyellow);
+    border: none;
+    border-radius: 100px;
+    font-size: calc(var(--fs-body) * 1.142);
+    font-weight: var(--fw-bold);
+    color: var(--clr-light);
+    z-index: 1;
+    &_small {
+        font-size: calc(var(--fs-body) * 0.928);
+        font-weight: var(--fw-extra-bold);
+    }
+    &_big {
+        font-size: calc(var(--fs-body) * 1.285);
+    }
+    &_menu {
+        font-size: var(--fs-body);
+    }
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: calc(var(--fs-body) * 1.142);
+        &_small {
+            font-size: calc(var(--fs-body) * 0.722);
+        }
+        &_big {
+            font-size: calc(var(--fs-body) * 1.111);
+        }
+        &_menu {
+            font-size: calc(var(--fs-body) * 0.777);
+        }
+    }
+}

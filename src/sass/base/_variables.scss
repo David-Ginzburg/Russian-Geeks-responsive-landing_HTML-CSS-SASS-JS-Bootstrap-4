@@ -1,0 +1,58 @@
+:root {
+    --ff-primary: 'Inter', sans-serif;
+    
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+    
+    --clr-light: #fff;
+    --clr-dark: #3C3534;
+    --clr-warmyellow: #f1a431;
+    --clr-purple: #3E3183;
+    
+    font-size: 14px;
+    --fs-body: 1rem;
+
+    --lh-body: calc(var(--fs-body) * 1.214);
+    
+    --lg-warmyellow: linear-gradient(107.54deg, #FFD53F 0.87%, #DC802B 100%), #F1A431;
+    --lg-purple: linear-gradient(108.15deg, #7A48BA 0%, #372B7A 100%), #3E3183;
+    --lg-darkpurple: linear-gradient(180deg, #33257C 0%, #3B2D81 100%), #FFFFFF;;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+    :root {
+        --fs-body: 1.1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --fs-body: 1.2rem;
+    }
+}
+
+@media (min-width: 1480px) {
+    :root {
+        --fs-body: 1.4rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    :root {
+        --fs-body: 1.8rem;
+    }
+    .container {
+        max-width: 80%;
+    }
+}

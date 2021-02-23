@@ -1,0 +1,71 @@
+.promo {
+    min-height: 35em;
+    position: relative;
+    padding-top: 5.714em;
+    &__subtitle {
+        margin-top: 2.64em;
+        width: 50%;
+    }
+    &__project {
+        margin-top: 1.142em;
+    }
+    &__cases {
+        margin-top: 3.88em;
+    }
+    &__vertical-chart {
+        position: absolute;
+        width: 8.285em;
+        height: 12.8em;
+        z-index: 2;
+        bottom: -7.5em;
+        right: calc(50% + 3em);
+    }
+    &__iphone {
+        position: absolute;
+        width: 10.857em;
+        height: 22.5em;
+        cursor: pointer;
+        bottom: -22em;
+        right: 50%;
+        transform: translateX(50%);
+        z-index: 1;
+    }
+    &__round-diagram {
+        position: absolute;
+        width: 8.228em;
+        height: 11em;
+        bottom: -23em;
+        right: calc(50% - 11em);
+        z-index: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .promo {
+        min-height: 22em;
+        &__subtitle {
+            font-size: calc(var(--fs-body) * 2);
+            margin-top: 0;
+            width: unset;
+        }
+        &__vertical-chart {
+            width: 11.277em;
+            height: 14.444em;
+            top: 6em;
+            right: 22em;
+        }
+        &__iphone {
+            width: 13.166em;
+            height: 27.111em;
+            top: 5em;
+            right: 12em;
+            transform: unset;
+        }
+        &__round-diagram {
+            width: 12.033em;
+            height: 15.722em;
+            top: 15em;
+            right: 3.5em;
+        }
+    }
+}
