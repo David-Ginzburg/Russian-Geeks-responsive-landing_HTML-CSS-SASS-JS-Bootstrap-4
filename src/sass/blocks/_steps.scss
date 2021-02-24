@@ -21,6 +21,7 @@
         }
         &-link.active {
             background-color: unset;
+            color: var(--clr-warmyellow);
             &::after {
                 content: "";
                 width: 100%;
@@ -66,7 +67,6 @@
             display: flex;
             flex-wrap: nowrap;
             &-link.active {
-                background-color: unset;
                 &::after {
                     bottom: -1em;
                 }
