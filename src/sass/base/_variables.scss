@@ -56,3 +56,15 @@
         max-width: 80%;
     }
 }
+
+@media (min-width: 2400px) {
+    :root {
+        --fs-body: 1.9rem;
+    }
+}
+
+@media (min-width: 3200px) {
+    :root {
+        --fs-body: 2rem;
+    }
+}

@@ -43,6 +43,9 @@
 @media (min-width: 768px) {
     .promo {
         min-height: 22em;
+        &__title {
+            margin-top: 2.64em;
+        }
         &__subtitle {
             font-size: calc(var(--fs-body) * 2);
             margin-top: 0;

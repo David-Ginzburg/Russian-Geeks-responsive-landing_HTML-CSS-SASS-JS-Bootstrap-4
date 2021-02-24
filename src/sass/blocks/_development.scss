@@ -21,7 +21,7 @@
         min-height: 75em;
         background: url('../img/backgrounds_big/development.png') no-repeat center / 100% 100%;
         &__text {
-            font-size: 1.111rem;
+            font-size: calc(var(--fs-body) * 1.111);
             line-height: 1.3;
         }
         &__wrapper {
@@ -30,9 +30,10 @@
         &__pic {
             position: absolute;
             left: -2.5em;
-            top: -5em;
-            width: 20.277em;
-            height: 20.277em;
+            top: -3em;
+            width: 25.277em;
+            height: 25.277em;
+            z-index: 1;
         }
         &::before {
             content: "";
@@ -47,90 +48,31 @@
             color: var(--clr-light);
             position: absolute;
             right: 0;
-            bottom: 12em;
-            height: 11.55em;
-            width: 39em;
+            bottom: 13em;
+            height: calc(var(--fz-body) * 11.55);
+            width: calc(var(--fz-body) * 39);
             padding: 2em;
             padding-left: 5em;
             background-color: var(--clr-purple);
-            border-top-left-radius: 100px;
-            border-bottom-left-radius: 100px;
+            border-top-left-radius: 100em;
+            border-bottom-left-radius: 100em;
             &__title {
-                font-size: 1.444rem;
+                font-size: calc(var(--fz-body) * 1.444);
             }
             &__subtitle {
-                font-size: 1rem;
+                font-size: calc(var(--fz-body) * 1);
                 margin-bottom: 1.444em;
             }
             &__input {
                 border-radius: 100px;
-                height: 2.4em;
-                width: 8em;
-                padding: 0 1em;
-                font-size: 1.2rem;
+                padding-left: 1em;
                 border: none;
+                margin-right: 1em;
             }
             .btn {
-                height: 2.4em;
-                width: 8em;
-                padding: 0 1em;
-                font-size: 1.2rem;
+                padding-left: 2.5em;
+                padding-right: 2.5em;
             }
         }
     }
-}
-
-@media (min-width: 992px) {
-    .development {
-        &__pic {
-            width: 25.277em;
-            height: 25.277em;
-        }
-        &-form {
-            bottom: 15em;
-            &__input {
-                height: 2.5em;
-                width: 9em;
-            }
-            .btn {
-                height: 2.5em;
-                width: 9em;
-            }
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .development {
-        &-form {
-            bottom: 17em;
-            &__input {
-                height: 2.8em;
-                width: 10em;
-            }
-            .btn {
-                height: 2.8em;
-                width: 10em;
-            }
-        }
-    }
-}
-
-@media (min-width: 1480px) {
-    .development {
-        &-form {
-            height: 10.55em;
-            bottom: 10em;
-            &__input {
-                width: 11em;
-            }
-            .btn {
-                width: 11em;
-            }
-        }
-    }
-}
-
-@media (min-width: 1920px) {
-    
 }

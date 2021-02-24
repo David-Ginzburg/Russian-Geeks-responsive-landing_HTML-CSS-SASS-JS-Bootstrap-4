@@ -5,6 +5,9 @@
         text-align: center;
     }
     .nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
         margin-top: 3em;
         justify-content: space-between;
         align-items: center;
@@ -60,6 +63,7 @@
     .steps {
         margin-top: -12em;
         .nav {
+            display: flex;
             flex-wrap: nowrap;
             &-link.active {
                 background-color: unset;

@@ -1,11 +1,12 @@
 .btn {
     width: fit-content;
-    padding: 0.5em 1em;
+    padding: 1em;
     background-color: var(--clr-warmyellow);
     border: none;
     border-radius: 100px;
     font-size: calc(var(--fs-body) * 1.142);
     font-weight: var(--fw-bold);
+    line-height: 1em;
     color: var(--clr-light);
     z-index: 1;
     &_small {
@@ -29,13 +30,21 @@
     .btn {
         font-size: calc(var(--fs-body) * 1.142);
         &_small {
-            font-size: calc(var(--fs-body) * 0.722);
+            font-size: calc(var(--fs-body) * 0.8);
         }
         &_big {
             font-size: calc(var(--fs-body) * 1.111);
         }
         &_menu {
             font-size: calc(var(--fs-body) * 0.777);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn {
+        &_small {
+            font-size: calc(var(--fs-body) * 0.9);
         }
     }
 }
