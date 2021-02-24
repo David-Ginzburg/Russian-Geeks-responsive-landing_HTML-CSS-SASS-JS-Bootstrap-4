@@ -1,8 +1,9 @@
 .development {
     position: relative;
-    padding-top: 5.714em;
-    min-height: 55.555em;
+    padding-top: 39em;
+    min-height: 55em;
     background: url('../img/backgrounds_small/development.png') no-repeat left / 100% 100%;
+    color: var(--clr-dark);
     &::before {
         content: "";
         position: absolute;
@@ -16,16 +17,120 @@
 
 @media (min-width: 768px) {
     .development {
-        min-height: 55.555em;
+        padding-top: 30em;
+        min-height: 75em;
         background: url('../img/backgrounds_big/development.png') no-repeat center / 100% 100%;
+        &__text {
+            font-size: 1.111rem;
+            line-height: 1.3;
+        }
+        &__wrapper {
+            position: relative;
+        }
+        &__pic {
+            position: absolute;
+            left: -2.5em;
+            top: -5em;
+            width: 20.277em;
+            height: 20.277em;
+        }
         &::before {
             content: "";
             position: absolute;
-            top: -32em;
-            background: url('../img/backgrounds_big/development_stroke.png') no-repeat center / 190% 100%;
+            top: -52em;
+            background: url('../img/backgrounds_big/development_stroke.png') no-repeat center / 280% 100%;
             width: 100%;
             height: 100%;
             z-index: 0;
         }
+        &-form {
+            color: var(--clr-light);
+            position: absolute;
+            right: 0;
+            bottom: 12em;
+            height: 11.55em;
+            width: 39em;
+            padding: 2em;
+            padding-left: 5em;
+            background-color: var(--clr-purple);
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            &__title {
+                font-size: 1.444rem;
+            }
+            &__subtitle {
+                font-size: 1rem;
+                margin-bottom: 1.444em;
+            }
+            &__input {
+                border-radius: 100px;
+                height: 2.4em;
+                width: 8em;
+                padding: 0 1em;
+                font-size: 1.2rem;
+                border: none;
+            }
+            .btn {
+                height: 2.4em;
+                width: 8em;
+                padding: 0 1em;
+                font-size: 1.2rem;
+            }
+        }
     }
+}
+
+@media (min-width: 992px) {
+    .development {
+        &__pic {
+            width: 25.277em;
+            height: 25.277em;
+        }
+        &-form {
+            bottom: 15em;
+            &__input {
+                height: 2.5em;
+                width: 9em;
+            }
+            .btn {
+                height: 2.5em;
+                width: 9em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .development {
+        &-form {
+            bottom: 17em;
+            &__input {
+                height: 2.8em;
+                width: 10em;
+            }
+            .btn {
+                height: 2.8em;
+                width: 10em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1480px) {
+    .development {
+        &-form {
+            height: 10.55em;
+            bottom: 10em;
+            &__input {
+                width: 11em;
+            }
+            .btn {
+                width: 11em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    
 }

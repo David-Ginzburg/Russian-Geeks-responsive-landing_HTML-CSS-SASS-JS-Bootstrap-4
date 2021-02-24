@@ -21,7 +21,7 @@
                 <span class="navbar-toggler-icon menu__hamburger"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav justify-content-between m-md-auto col-md-9 col-xl-7 menu__list">
+                <ul class="navbar-nav justify-content-between m-md-auto col-md-9 col-xl-7 text-center text-md-left menu__list">
                     <li class="nav-item active menu__list-item">
                         <a class="nav-link" href="#">О компании<span class="sr-only">(current)</span></a>
                     </li>
@@ -47,24 +47,134 @@
             </div>
         </nav>
     </header>
-    
-    <section class="promo">
-        <div class="container">
-            <div class="row no-gutters flex-column align-items-center align-items-md-start text-center text-md-left">
-                <h1 class="title title_big order-md-1 promo__title col-md-4 col-xl-6">Разработка мобильных приложений <span class="title_yellow">IOS</span> и <span class="title_yellow">Android</span></h1>
-                <h2 class="title title_small order-md-0 promo__subtitle col-md-6 col-xl-8">Воплощаем Ваши бизнес идеи в мобильной среде</h2>
-                <button type="button" class="btn btn_big d-md-none order-2 promo__project">Обсудить проект</button>
-                <button type="button" class="btn btn_big d-none d-md-block order-2 promo__cases">Посмотреть кейсы</button>
-                <img src="img/vertical-chart.png" alt="vertical-chart" class="promo__vertical-chart">
-                <img src="img/iphone.png" alt="iphone" class="promo__iphone">
-                <img src="img/round-diagram.png" alt="round-diagram" class="promo__round-diagram">
-            </div>
-        </div>
-    </section>
 
-    <section class="development">
-       
-    </section>
+    <main>
+    
+        <section class="promo">
+            <div class="container">
+                <div class="row no-gutters flex-column align-items-center align-items-md-start text-center text-md-left">
+                    <h1 class="title title_big order-md-1 promo__title col-md-4 col-xl-6">Разработка мобильных приложений <span class="title_yellow">IOS</span> и <span class="title_yellow">Android</span></h1>
+                    <h2 class="title title_small order-md-0 promo__subtitle col-md-6 col-xl-8">Воплощаем Ваши бизнес идеи в мобильной среде</h2>
+                    <button type="button" class="btn btn_big d-md-none order-2 promo__project">Обсудить проект</button>
+                    <button type="button" class="btn btn_big d-none d-md-block order-2 promo__cases">Посмотреть кейсы</button>
+                    <img src="img/vertical-chart.png" alt="vertical-chart" class="promo__vertical-chart">
+                    <img src="img/iphone.png" alt="iphone" class="promo__iphone">
+                    <img src="img/round-diagram.png" alt="round-diagram" class="promo__round-diagram">
+                </div>
+            </div>
+        </section>
+
+        <section class="development">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="row no-gutters d-none d-md-block col-md-6 development__wrapper">
+                        <img src="../img/development_pic.png" alt="development" class="development__pic">
+                    </div>
+                    <div class="row flex-column no-gutters col-md-6">
+                        <h2 class="title title_middle">Разработаем ваше приложение в нашей студии <span class="title_yellow">полного цикла</span></h2>
+                        <p class="development__text">Разработка программных решений начиная от планирования, технического задания и бизнес-процессов заканчивая  публикаций и продвижением  вашего приложения точка окупаемость бизнеса до 70% за полгода</p>
+                    </div>
+                </div>
+            </div>
+            <form class="d-none d-md-block development-form">
+                <h2 class="development-form__title">Нет времени читать?</h2>
+                <div class="development-form__subtitle">Узнайте стоимость и сроки уже на первой консультации</div>
+                <div class="row no-gutters justify-content-between">
+                    <input type="tel" class="development-form__input" placeholder="Телефон">
+                    <input type="name" class="development-form__input" placeholder="Имя">
+                    <button type="submit" class="btn">Отправить</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="services__title title">Услуги</h2>
+                <div class="services__subtitle title_yellow">Сферы разработки</div>
+
+                <div class="services-block services-block_purple">
+                    <div class="row no-gutters">
+                        <div class="row no-gutters flex-column col-md-6">
+                            <h3 class="services-block__title title title_small"><span class="title_yellow">Приложение</span> для корпоративных компаний</h3>
+                            <p class="services-block__text">
+                                Мы создаем решения для корпоративных компаний, чтобы улучшить взаимодействие вашей компании с пользователями и несравненно увеличить рейтинг вашей организации перед вашими клиентами. также корпоративные разработка приложений помогает несравненно сильно удерживать пользователе
+                            </p>
+                            <div class="row no-gutters flex-column flex-md-row w-100 services-block__btns">
+                                <button class="btn btn_small">Подробнее</button>
+                                <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+                            </div>
+                        </div>
+                        <div class="row no-gutters d-none d-md-block col-md-6 services-block__wrapper">
+                            <img src="../img/services_pic.png" alt="services" class="services-block__pic services-block__pic_right">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="services-block services-block_white services-block_loyalty">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="row no-gutters flex-column col-md-6">
+                        <h3 class="services-block__title title title_small"><span class="title_yellow">Приложение</span> лояльности</h3>
+                        <p class="services-block__text">
+                            Приложения лояльности помогают несравненно улучшать ваше взаимодействие с пользователем, заставить вернуться в ваш магазин, сделать очередную покупку и никогда не забывать про то что вы существуете. постоянные акции бонусы помогают очень сильно увеличить процент повторяющихся клиентов в ваших организациях
+                        </p>
+                        <div class="row no-gutters flex-column flex-md-row w-100 services-block__btns">
+                            <button class="btn btn_small">Подробнее</button>
+                            <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+                        </div>
+                    </div>
+                    <div class="row no-gutters d-none d-md-block col-md-6 services-block__wrapper">
+                        <img src="../img/loyalty_pic.png" alt="loyalty" class="services-block__pic services-block__pic_right">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-block services-block_purple services-block_commercials">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="row no-gutters flex-column col-md-6 order-1">
+                        <h3 class="services-block__title title title_small"><span class="title_yellow">Коммерческие</span> разработки</h3>
+                        <div class="services-block__subtitle title">Интернет-магазины тири</div>
+                        <p class="services-block__text">
+                            Мы создаем решения для корпоративных компаний, чтобы улучшить взаимодействие вашей компании с пользователями и несравненно увеличить рейтинг вашей организации перед вашими клиентами. также корпоративные разработка приложений помогает несравненно сильно удерживать пользователе
+                        </p>
+                        <div class="row no-gutters flex-column flex-md-row w-100 services-block__btns">
+                            <button class="btn btn_small">Подробнее</button>
+                            <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+                        </div>
+                    </div>
+                    <div class="row no-gutters d-none d-md-block col-md-6 services-block__wrapper order-0">
+                        <img src="../img/commercials_pic.png" alt="commercials" class="services-block__pic services-block__pic_left">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-block services-block_white services-block_business-process">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="row no-gutters flex-column col-md-6">
+                        <h3 class="services-block__title title title_small"><span class="title_yellow">Автомат</span> бизнес-процесса</h3>
+                        <p class="services-block__text">
+                            Мобильное приложение также помогают автоматизировать и усовершенствовать ваши бизнес-процессы точка будто взаимодействие с курьерами, работниками ми-ми или просто процессами документооборота в вашей компании, всё это может быть на высочайшем уровне с помощью наших мобильных разработок для вашего бизнеса.
+                        </p>
+                        <div class="row no-gutters flex-column flex-md-row w-100 services-block__btns">
+                            <button class="btn btn_small">Подробнее</button>
+                            <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+                        </div>
+                    </div>
+                    <div class="row no-gutters d-none d-md-block col-md-6 services-block__wrapper">
+                        <img src="../img/business-process_pic.png" alt="business-process" class="services-block__pic services-block__pic_right">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>

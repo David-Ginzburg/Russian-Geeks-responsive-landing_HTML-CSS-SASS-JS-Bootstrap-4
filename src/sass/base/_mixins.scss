@@ -1,0 +1,24 @@
+@mixin before_circles {
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: -5%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-color: var(--clr-warmyellow);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        top: -10%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-color: var(--clr-purple);
+    }
+}

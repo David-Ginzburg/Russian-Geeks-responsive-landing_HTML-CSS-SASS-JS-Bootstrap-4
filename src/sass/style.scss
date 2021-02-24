@@ -1,5 +1,6 @@
 // @import 'libs/font';
 @import 'base/variables';
+@import 'base/mixins.scss';
 
 *,
 *::before,
@@ -25,6 +26,7 @@ body {
 @import 'blocks/menu.scss';
 @import 'blocks/promo.scss';
 @import 'blocks/development';
+@import 'blocks/services';
 
 @media (min-width: 576px) {
 

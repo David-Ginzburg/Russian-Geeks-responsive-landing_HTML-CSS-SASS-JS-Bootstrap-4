@@ -16,6 +16,9 @@
     &__list {
         padding: 0;
         &-item {
+            &:not(:first-child) {
+                margin-top: 1em;
+            }
             a {
                 white-space: nowrap;
                 color: var(--clr-dark)
@@ -36,5 +39,17 @@
     &__text {
         color: var(--clr-dark);
         font-size: calc(var(--fs-body) * 0.6);
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        &__list {
+            &-item {
+                &:not(:first-child) {
+                    margin-top: 0em;
+                }
+            }
+        }
     }
 }
