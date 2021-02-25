@@ -1,0 +1,149 @@
+.cases {
+    margin-top: 2em;
+    padding: 1em;
+    padding-top: 8em;
+    min-height: 55em;
+    background: url('../img/backgrounds_small/cases.png') no-repeat left / 100% 100%;
+    &__title {
+        color: var(--clr-dark);
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 2em;
+        display: grid;
+        gap: 2em;
+    }
+    &-item {
+        width: 100%;
+        height: 18em;
+        position: relative;
+        cursor: pointer;
+        &_purple .cases-item__top-wrapper {
+            background: linear-gradient(108.15deg, #7A48BA 0%, #372B7A 100%), #3E3183;
+        }
+        &_purple .cases-item__bottom-wrapper::after { 
+            content: '';
+            position: absolute;
+            left: 0; 
+            top: 0;
+            width: 100%; 
+            height: 100%;
+            display: inline-block;
+            background: linear-gradient(180deg, #9a6cd6 0%, #5f309c 62.44%, #371d58 72.44%), linear-gradient(108.15deg, #7A48BA 0%, #372B7A 100%), #3E3183;
+            opacity: 0.7;
+            border-radius: 20px;
+        }
+        &_orange .cases-item__top-wrapper {
+            background: linear-gradient(107.54deg, #FFD53F 0.87%, #DC802B 100%), #F1A431;
+        }
+        &_orange .cases-item__bottom-wrapper::after { 
+            content: '';
+            position: absolute;
+            left: 0; 
+            top: 0;
+            width: 100%; 
+            height: 100%;
+            display: inline-block;
+            background: linear-gradient(180deg, #ffa84b 0%, #805417 62.44%, #462e0c 72.44%), linear-gradient(108.73deg, #FFDF6F 0%, #aa6320 100%), #F1A431;
+            opacity: 0.7;
+            border-radius: 20px;
+        }
+        &:hover .cases-item__bottom-wrapper {
+            opacity: 1;
+        }
+        &:hover .cases-item__top-wrapper {
+            opacity: 0;
+        }
+        &__top {
+            &-wrapper {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                padding: 1.5em;
+                transition: 0.6s all;
+            }
+            &-pic {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+                width: 8em;
+                height: 8em;
+                overflow: hidden;
+                border-radius: 100%;
+                background-color: var(--clr-light);
+            }
+            &-logo {
+                width: 70%;
+                height: 70%;
+                object-fit: contain;
+            }
+            &-title {
+                text-align: right;
+                margin-top: auto;
+                font-size: calc(var(--fs-body) * 1.285);
+                font-weight: var(--fw-bold);
+                width: 60%;
+            }
+            &-descr {
+                text-align: right;
+                width: 60%;
+                min-height: 2em;
+            }
+        }
+        &__bottom {
+            &-wrapper {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                padding: 1.5em;
+                opacity: 0;
+                transition: 0.6s all;
+            }
+            &-pic {
+                flex-shrink: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            &-logo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.5;
+                border-radius: 20px;
+            }
+            &-title {
+                margin-top: auto;
+                font-size: calc(var(--fs-body) * 1.777);
+                font-weight: var(--fw-bold);
+                z-index: 1;
+            }
+            &-descr {
+                margin-top: 2em;
+                min-height: 2em;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .cases {
+        margin-top: -18em;
+        padding-top: 30em;
+        min-height: 110em;
+        background: url('../img/backgrounds_big/cases.png') no-repeat left / 100% 100%;
+        &__wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+            // grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            // grid-template-rows: repeat(2, minmax(260px, auto));
+            // grid-auto-rows: minmax(260px, auto);
+        }
+    }
+}

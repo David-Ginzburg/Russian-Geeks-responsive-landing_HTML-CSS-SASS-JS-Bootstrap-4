@@ -17,11 +17,11 @@
             text-align: center;
         }
         &-link:hover {
-            color: var(--clr-warmyellow);
+            color: var(--clr-orange);
         }
         &-link.active {
             background-color: unset;
-            color: var(--clr-warmyellow);
+            color: var(--clr-orange);
             &::after {
                 content: "";
                 width: 100%;
