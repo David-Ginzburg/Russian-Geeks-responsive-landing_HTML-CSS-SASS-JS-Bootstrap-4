@@ -1,6 +1,7 @@
 // @import 'libs/font';
+@import 'libs/bootstrap.min';
 @import 'base/variables';
-@import 'base/mixins.scss';
+@import 'base/mixins';
 
 *,
 *::before,
@@ -29,6 +30,7 @@ body {
 @import 'blocks/services';
 @import 'blocks/steps';
 @import 'blocks/team';
+@import 'blocks/assignment';
 
 @media (min-width: 576px) {
 

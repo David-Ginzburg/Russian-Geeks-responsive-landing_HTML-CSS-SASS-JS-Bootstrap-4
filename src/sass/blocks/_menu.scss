@@ -44,6 +44,10 @@
 
 @media (min-width: 768px) {
     .menu {
+        &__logo {
+            width: 5em;
+            height: 4.333em;
+        }
         &__list {
             &-item {
                 &:not(:first-child) {

@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css ">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
@@ -39,7 +37,7 @@
                     </li>
                 </ul>
                 <div class="navbar-text d-flex flex-column align-items-center ml-md-auto mr-md-2">
-                    <button type="button" class="btn btn_menu">+7(495) 999-99-99</button>
+                    <button type="button" class="btn btn_small">+7(495) 999-99-99</button>
                     <span class="menu__text">
                         Заказать звонок
                     </span>
@@ -67,10 +65,10 @@
         <section class="development">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="row no-gutters d-none d-md-block col-md-6 development__wrapper">
+                    <div class="d-none d-md-flex col-md-6 development__wrapper">
                         <img src="img/development_pic.png" alt="development" class="development__pic">
                     </div>
-                    <div class="row flex-column no-gutters col-md-6">
+                    <div class="d-flex flex-column col-md-6">
                         <h2 class="title title_middle">Разработаем ваше приложение в нашей студии <span class="title_yellow">полного цикла</span></h2>
                         <p class="development__text">Разработка программных решений начиная от планирования, технического задания и бизнес-процессов заканчивая  публикаций и продвижением  вашего приложения точка окупаемость бизнеса до 70% за полгода</p>
                     </div>
@@ -79,9 +77,9 @@
             <form class="d-none d-md-block development-form">
                 <h2 class="development-form__title">Нет времени читать?</h2>
                 <div class="development-form__subtitle">Узнайте стоимость и сроки уже на первой консультации</div>
-                <div class="row no-gutters justify-content-between">
+                <div class="d-flex justify-content-between">
                     <input type="tel" class="development-form__input" placeholder="Телефон">
-                    <input type="name" class="development-form__input" placeholder="Имя">
+                    <input type="text" class="development-form__input" placeholder="Имя">
                     <button type="submit" class="btn">Отправить</button>
                 </div>
             </form>
@@ -91,84 +89,85 @@
             <div class="container">
                 <h2 class="services__title title">Услуги</h2>
                 <div class="services__subtitle title_yellow">Сферы разработки</div>
+            </div>
 
-                <div class="services-block services-block_purple">
+            <div class="services-block services-block_purple">
+                <div class="container">
                     <div class="row no-gutters">
-                        <div class="row no-gutters flex-column col-md-6">
+                        <div class="d-flex flex-column col-md-6">
                             <h3 class="services-block__title title title_small"><span class="title_yellow">Приложение</span> для корпоративных компаний</h3>
                             <p class="services-block__text">
                                 Мы создаем решения для корпоративных компаний, чтобы улучшить взаимодействие вашей компании с пользователями и несравненно увеличить рейтинг вашей организации перед вашими клиентами. также корпоративные разработка приложений помогает несравненно сильно удерживать пользователе
                             </p>
-                            <div class="row no-gutters flex-column flex-md-row w-100 services-block__btns">
+                            <div class="d-flex flex-column flex-md-row w-100 services-block__btns">
                                 <button class="btn btn_small">Подробнее</button>
                                 <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
                             </div>
                         </div>
-                        <div class="row no-gutters d-none d-md-block col-md-6 services-block__wrapper">
+                        <div class="d-none d-md-flex col-md-6 services-block__wrapper">
                             <img src="img/services_pic.png" alt="services" class="services-block__pic services-block__pic_right">
                         </div>
                     </div>
                 </div>
-
             </div>
-        </section>
 
-        <section class="services-block services-block_white services-block_loyalty">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="row no-gutters flex-column col-md-6">
-                        <h3 class="services-block__title title title_small"><span class="title_yellow">Приложение</span> лояльности</h3>
-                        <p class="services-block__text">
-                            Приложения лояльности помогают несравненно улучшать ваше взаимодействие с пользователем, заставить вернуться в ваш магазин, сделать очередную покупку и никогда не забывать про то что вы существуете. постоянные акции бонусы помогают очень сильно увеличить процент повторяющихся клиентов в ваших организациях
-                        </p>
-                        <div class="row no-gutters flex-column flex-md-row w-100 services-block__btns">
-                            <button class="btn btn_small">Подробнее</button>
-                            <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+            <div class="services-block services-block_white services-block_loyalty">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="d-flex flex-column col-md-6">
+                            <h3 class="services-block__title title title_small"><span class="title_yellow">Приложение</span> лояльности</h3>
+                            <p class="services-block__text">
+                                Приложения лояльности помогают несравненно улучшать ваше взаимодействие с пользователем, заставить вернуться в ваш магазин, сделать очередную покупку и никогда не забывать про то что вы существуете. постоянные акции бонусы помогают очень сильно увеличить процент повторяющихся клиентов в ваших организациях
+                            </p>
+                            <div class="d-flex flex-column flex-md-row w-100 services-block__btns">
+                                <button class="btn btn_small">Подробнее</button>
+                                <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row no-gutters d-none d-md-block col-md-6 services-block__wrapper">
-                        <img src="img/loyalty_pic.png" alt="loyalty" class="services-block__pic services-block__pic_right">
+                        <div class="d-none d-md-flex col-md-6 services-block__wrapper">
+                            <img src="img/loyalty_pic.png" alt="loyalty" class="services-block__pic services-block__pic_right">
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="services-block services-block_purple services-block_commercials">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="row no-gutters flex-column col-md-6 order-1">
-                        <h3 class="services-block__title title title_small"><span class="title_yellow">Коммерческие</span> разработки</h3>
-                        <div class="services-block__subtitle title">Интернет-магазины тири</div>
-                        <p class="services-block__text">
-                            Мы создаем решения для корпоративных компаний, чтобы улучшить взаимодействие вашей компании с пользователями и несравненно увеличить рейтинг вашей организации перед вашими клиентами. также корпоративные разработка приложений помогает несравненно сильно удерживать пользователе
-                        </p>
-                        <div class="row no-gutters flex-column flex-md-row w-100 services-block__btns">
-                            <button class="btn btn_small">Подробнее</button>
-                            <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+    
+            <div class="services-block services-block_purple services-block_commercials">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="d-flex flex-column col-md-6 order-1">
+                            <h3 class="services-block__title title title_small"><span class="title_yellow">Коммерческие</span> разработки</h3>
+                            <div class="services-block__subtitle title">Интернет-магазины тири</div>
+                            <p class="services-block__text">
+                                Мы создаем решения для корпоративных компаний, чтобы улучшить взаимодействие вашей компании с пользователями и несравненно увеличить рейтинг вашей организации перед вашими клиентами. также корпоративные разработка приложений помогает несравненно сильно удерживать пользователе
+                            </p>
+                            <div class="d-flex flex-column flex-md-row w-100 services-block__btns">
+                                <button class="btn btn_small">Подробнее</button>
+                                <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row no-gutters d-none d-md-block col-md-6 services-block__wrapper order-0">
-                        <img src="img/commercials_pic.png" alt="commercials" class="services-block__pic services-block__pic_left">
+                        <div class="d-none d-md-flex col-md-6 services-block__wrapper order-0">
+                            <img src="img/commercials_pic.png" alt="commercials" class="services-block__pic services-block__pic_left">
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="services-block services-block_white services-block_business-process">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="row no-gutters flex-column col-md-6">
-                        <h3 class="services-block__title title title_small"><span class="title_yellow">Автомат</span> бизнес-процесса</h3>
-                        <p class="services-block__text">
-                            Мобильное приложение также помогают автоматизировать и усовершенствовать ваши бизнес-процессы точка будто взаимодействие с курьерами, работниками ми-ми или просто процессами документооборота в вашей компании, всё это может быть на высочайшем уровне с помощью наших мобильных разработок для вашего бизнеса.
-                        </p>
-                        <div class="row no-gutters flex-column flex-md-row w-100 services-block__btns">
-                            <button class="btn btn_small">Подробнее</button>
-                            <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+    
+            <div class="services-block services-block_white services-block_business-process">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="d-flex flex-column col-md-6">
+                            <h3 class="services-block__title title title_small"><span class="title_yellow">Автомат</span> бизнес-процесса</h3>
+                            <p class="services-block__text">
+                                Мобильное приложение также помогают автоматизировать и усовершенствовать ваши бизнес-процессы точка будто взаимодействие с курьерами, работниками ми-ми или просто процессами документооборота в вашей компании, всё это может быть на высочайшем уровне с помощью наших мобильных разработок для вашего бизнеса.
+                            </p>
+                            <div class="d-flex flex-column flex-md-row w-100 services-block__btns">
+                                <button class="btn btn_small">Подробнее</button>
+                                <button class="btn btn_small btn_transparent">Получить пример ТЗ</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row no-gutters d-none d-md-block col-md-6 services-block__wrapper">
-                        <img src="img/business-process_pic.png" alt="business-process" class="services-block__pic services-block__pic_right">
+                        <div class="d-none d-md-flex col-md-6 services-block__wrapper">
+                            <img src="img/business-process_pic.png" alt="business-process" class="services-block__pic services-block__pic_right">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,7 +175,7 @@
 
         <section class="steps">
             <div class="container">
-                <h2 class="services__title title steps__title"><span class="title_yellow">Этапы</span> работы</h2>
+                <h2 class="title steps__title"><span class="title_yellow">Этапы</span> работы</h2>
                 <ul class="nav nav-pills steps__wrapper" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <a class="nav-link active" id="pills-description-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-description" aria-selected="true">Написание ТЗ и углубление<br> в ваши бизнес процессы</a>
@@ -203,7 +202,7 @@
                         <div class="steps-item">
                             <div class="row no-gutters flex-column flex-md-row align-items-center align-items-md-start justify-content-around">
                                 <img src="img/description_pic.png" alt="description" class="steps-item__pic">
-                                <div class="row no-gutters flex-column col-md-6">
+                                <div class="d-flex flex-column col-md-6">
                                     <h3 class="steps-item__title title title_small">Написание <span class="title_yellow">ТЗ</span> и углубление в ваши <span class="title_yellow">бизнес процессы</span></h3>
                                     <p class="steps-item__text">
                                         Составление технического задания нужно для того, чтобы вы могли “прикоснуться” к тому, что получите в итоге. Чтобы ваш проект не потребовалось переделывать очень важно правильно все описать. Чтобы фактический и финальный бюджет проекта соответствовал запланированному изначально.
@@ -216,8 +215,8 @@
                     <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab">
                         <div class="steps-item">
                             <div class="row no-gutters flex-column flex-md-row align-items-center align-items-md-start justify-content-around">
-                                <img src="img/design documentation publication_steps.png" alt="design" class="steps-item__pic">
-                                <div class="row no-gutters flex-column col-md-6">
+                                <img src="img/design_documentation_publication_steps.png" alt="design" class="steps-item__pic">
+                                <div class="d-flex flex-column col-md-6">
                                     <h3 class="steps-item__title title title_small">Дизайн</h3>
                                     <p class="steps-item__text">
                                         Это несравненно важно Что это помогает вам прикоснуться к вашему проекту, увидеть всё Своими глазами, в понятном и доступном для каждого виде. дизайн не только помогает Правильно оценить перспективность будущего проекта, но и даёт  что Что ожидается.
@@ -231,7 +230,7 @@
                         <div class="steps-item">
                             <div class="row no-gutters flex-column flex-md-row align-items-center align-items-md-start justify-content-around">
                                 <img src="img/development_steps.png" alt="development" class="steps-item__pic steps-item__pic_development">
-                                <div class="row no-gutters flex-column col-md-6">
+                                <div class="d-flex flex-column col-md-6">
                                     <h3 class="steps-item__title title title_small">Разработка</h3>
                                     <p class="steps-item__text">
                                         После этого нашей команды разработки приступает к работе, в этом этапе наблюдается очень много различных этапов, потому что каждый проект уникален и в нём может содержаться неограниченное количество этапов дедлайнов и модулей разработки.
@@ -245,7 +244,7 @@
                         <div class="steps-item">
                             <div class="row no-gutters flex-column flex-md-row align-items-center align-items-md-start justify-content-around">
                                 <img src="img/testing_steps.png" alt="testing" class="steps-item__pic steps-item__pic_testing">
-                                <div class="row no-gutters flex-column col-md-6">
+                                <div class="d-flex flex-column col-md-6">
                                     <h3 class="steps-item__title title title_small">Тестирование</h3>
                                     <p class="steps-item__text">
                                         Любое программное обеспечение - это тысячи мелких деталей, из которых оно состоит. Когда оно стыкуется с десятками тысяч деталей, из которых состоят устройства и их операционные системы сбой всего из-за сложности. При помощи тестирования мы избегаем того, чтобы этот сбой случился на устройствах ваших пользователей.
@@ -258,8 +257,8 @@
                     <div class="tab-pane fade" id="pills-papers" role="tabpanel" aria-labelledby="pills-papers-tab">
                         <div class="steps-item">
                             <div class="row no-gutters flex-column flex-md-row align-items-center align-items-md-start justify-content-around">
-                                <img src="img/design documentation publication_steps.png" alt="documentation" class="steps-item__pic">
-                                <div class="row no-gutters flex-column col-md-6">
+                                <img src="img/design_documentation_publication_steps.png" alt="documentation" class="steps-item__pic">
+                                <div class="d-flex flex-column col-md-6">
                                     <h3 class="steps-item__title title title_small">Сдача <span class="title_yellow">Актов</span> и <span class="title_yellow">этапов</span></h3>
                                     <p class="steps-item__text">
                                         Сдача актов этапов-это важнейшая часть разработки, потому что программные продукты включают в себя разработку разных типов,  из-за Чего чаще всего приходится останавливаться на одной части проект, и работать над другой. Именно для этого важно чтобы эти части были задокументированы и сохранены.
@@ -272,8 +271,8 @@
                     <div class="tab-pane fade" id="pills-publication" role="tabpanel" aria-labelledby="pills-publication-tab">
                         <div class="steps-item">
                             <div class="row no-gutters flex-column flex-md-row align-items-center align-items-md-start justify-content-around">
-                                <img src="img/design documentation publication_steps.png" alt="development" class="steps-item__pic">
-                                <div class="row no-gutters flex-column col-md-6">
+                                <img src="img/design_documentation_publication_steps.png" alt="development" class="steps-item__pic">
+                                <div class="d-flex flex-column col-md-6">
                                     <h3 class="steps-item__title title title_small">Публикация и <span class="title_yellow">продвижение</span></h3>
                                     <p class="steps-item__text">
                                         Оказывается, опубликовать приложение недостаточно для того чтобы пользователи о нём узнали. требуется очень много других действий, такие как отслеживания взаимодействия клиентов с приложениями, работу приложения, рейтинг в сторах, реклама через сторонние сервисы  и продвижения.
@@ -289,20 +288,20 @@
 
         <section class="team">
             <div class="container">
-                <div class="row no-gutters flex-column flex-nowrap flex-md-row justify-content-center  align-items-center">
+                <div class="d-flex flex-column flex-nowrap flex-md-row justify-content-center  align-items-center team__wrapper">
                     <div class="row no-gutters justify-content-center justify-content-md-start align-items-center order-md-1">
-                        <h2 class="services__title title team__title"><span class="title_yellow">Взаимодействие</span> с командой</h2>
+                        <h2 class="title team__title"><span class="title_yellow">Взаимодействие</span> с командой</h2>
                         <p class="team__text">Чтобы вам быть постоянно в курсе того, На каком этапе идет разработка вашего приложения, мы придумали систему отслеживания процессов и работы с нашей командой разработки</p>
-                        <div class="team-list row no-gutters flex-column justify-content-center align-items-center">
-                            <div class="row no-gutters flex-nowrap space-between align-items-center team-list__item">
+                        <div class="team-list d-flex flex-column justify-content-center align-items-center">
+                            <div class="d-flex flex-nowrap space-between align-items-center team-list__item">
                                 <div class="d-flex justify-content-center align-items-center team-list__item-sign">!</div>
                                 <p class="team-list__item-text">У Вас будут <span class="title_yellow">постоянный доступ</span> к менеджеру, который ведёт лично ваш проект, в любое время суток Он может и готов вам сообщить настоящее состояние вашего приложения</p>
                             </div>
-                            <div class="row no-gutters flex-nowrap space-between align-items-center team-list__item">
+                            <div class="d-flex flex-nowrap space-between align-items-center team-list__item">
                                 <div class="d-flex justify-content-center align-items-center team-list__item-sign">!</div>
                                 <p class="team-list__item-text">У вас будет акже отслеживание в сети <span class="title_yellow">Trello</span>, Где вы сможете непосредственно наблюдать за проектной группой</p>
                             </div>
-                            <div class="row no-gutters flex-nowrap space-between align-items-center team-list__item">
+                            <div class="d-flex flex-nowrap space-between align-items-center team-list__item">
                                 <div class="d-flex justify-content-center align-items-center team-list__item-sign">!</div>
                                 <p class="team-list__item-text">У Вас будут еженедельные <span class="title_yellow">отчёты</span> вам на почту, чтобы Вы точно были в курсе, Как идёт процесс</p>
                             </div>
@@ -310,6 +309,42 @@
                     </div>
                     <div class="row no-gutters justify-content-center align-items-center order-md-0">
                         <img src="img/team_pic.png" alt="team" class="team__pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="assignment">
+            <div class="container">
+                <div class="row no-gutters assignment-item">
+                    <div class="d-flex flex-column col-md-7 assignment-item__descr">
+                        <h2 class="title assignment-item__title">Получите пример <span class="title_yellow">техничекого задания</span></h2>
+                        <p class="assignment-item__text">Наши ТЗ  разработано таким образом, чтобы не только дать понять полный объём разработке, но и чтобы не забыть про какие-то мелочи и другие вещи важные для целостности проекта</p>
+                        <p class="assignment-item__text-small">Отправьте нам свою почту и получите <span class="title_yellow">пример ТЗ</span></p>
+                        <form class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
+                            <input type="email" class="assignment-item__input" placeholder="Почта">
+                            <input type="text" class="assignment-item__input" placeholder="Имя">
+                            <button type="submit" class="btn">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="offset-md-1 col-md-4 assignment-item__wrapper">
+                        <img src="img/tecnical-descr_pic.png" alt="tecnical-descr" class="assignment-item__pic">
+                    </div>
+                </div>
+                    
+                <div class="row no-gutters assignment-item">
+                    <div class="d-flex flex-column offset-md-1 col-md-7 order-md-1 assignment-item__descr">
+                        <h2 class="title assignment-item__title">Получите пример <span class="title_yellow">договора</span></h2>
+                        <p class="assignment-item__text">Наши ТЗ  разработано таким образом, чтобы не только дать понять полный объём разработке, но и чтобы не забыть про какие-то мелочи и другие вещи важные для целостности проекта</p>
+                        <p class="assignment-item__text-small">Отправьте нам свою почту и получите <span class="title_yellow">пример договора</span></p>
+                        <form class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
+                            <input type="email" class="assignment-item__input" placeholder="Почта">
+                            <input type="text" class="assignment-item__input" placeholder="Имя">
+                            <button type="submit" class="btn">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 order-md-0 assignment-item__wrapper assignment-item__wrapper_wide">
+                        <img src="img/offer_pic.png" alt="offer" class="assignment-item__pic assignment-item__pic">
                     </div>
                 </div>
             </div>

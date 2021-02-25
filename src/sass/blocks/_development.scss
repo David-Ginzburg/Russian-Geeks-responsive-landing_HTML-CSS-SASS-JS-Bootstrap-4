@@ -1,6 +1,6 @@
 .development {
     position: relative;
-    padding-top: 39em;
+    padding-top: 37em;
     min-height: 55em;
     background: url('../img/backgrounds_small/development.png') no-repeat left / 100% 100%;
     color: var(--clr-dark);
@@ -48,7 +48,7 @@
             color: var(--clr-light);
             position: absolute;
             right: 0;
-            bottom: 13em;
+            bottom: 10.5em;
             height: calc(var(--fz-body) * 11.55);
             width: calc(var(--fz-body) * 39);
             padding: 2em;
@@ -64,15 +64,26 @@
                 margin-bottom: 1.444em;
             }
             &__input {
+                height: 2.8em;
                 border-radius: 100px;
                 padding-left: 1em;
-                border: none;
                 margin-right: 1em;
+                border: none;
+                font-size: calc(var(--fs-body) * 1.142);
             }
             .btn {
+                height: 2.8em;
                 padding-left: 2.5em;
                 padding-right: 2.5em;
             }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .development {
+        &-form {
+            bottom: 13em;
         }
     }
 }

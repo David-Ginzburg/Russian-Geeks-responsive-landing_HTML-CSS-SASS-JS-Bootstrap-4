@@ -1,6 +1,8 @@
 .btn {
     width: fit-content;
     padding: 1em;
+    padding-left: 0;
+    padding-right: 0;
     background-color: var(--clr-warmyellow);
     border: none;
     border-radius: 100px;
@@ -16,13 +18,16 @@
     &_big {
         font-size: calc(var(--fs-body) * 1.285);
     }
-    &_menu {
-        font-size: var(--fs-body);
-    }
     &_transparent {
         color: var(--clr-purple);
         border: 1px solid var(--clr-purple);
         background-color: var(--clr-light);
+    }
+}
+
+@media (min-width: 365px) {
+    .btn {
+        padding: 1em;
     }
 }
 
@@ -34,9 +39,6 @@
         }
         &_big {
             font-size: calc(var(--fs-body) * 1.111);
-        }
-        &_menu {
-            font-size: calc(var(--fs-body) * 0.777);
         }
     }
 }

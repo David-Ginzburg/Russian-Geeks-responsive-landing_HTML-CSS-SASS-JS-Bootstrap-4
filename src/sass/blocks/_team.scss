@@ -1,11 +1,14 @@
 .team {
     padding: 1em;
-    padding-top: 5em;
-    min-height: 60em;
-    background: url('../img/backgrounds_small/team.png') no-repeat center / 100% 150%;
+    padding-top: 9em;
+    min-height: 68em;
+    background: url('../img/backgrounds_small/team.png') no-repeat center / 100% 140%;
     color: var(--clr-dark);
     &__text {
         margin-top: 2.142em;
+    }
+    &__wrapper {
+        overflow: hidden;
     }
     &-list {
         margin-top: 2em;
@@ -29,9 +32,10 @@
 
 @media (min-width: 768px) {
     .team {
-        padding-top: 15em;
-        min-height: 55em;
-        background: url('../img/backgrounds_big/team.png') no-repeat center / 100% 120%;
+        padding-top: 20em;
+        margin-top: -8em;
+        min-height: 70em;
+        background: url('../img/backgrounds_big/team.png') no-repeat center / 100% 100%;
         &-list {
             margin-top: 2em;
             &__item {
@@ -42,7 +46,29 @@
         &__pic {
             width: 30.27em;
             height: 20.166em;
+            margin-right: 1em;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .team {
+        padding-top: 17em;
+        min-height: 60em;
+        &__pic {
             margin-right: 5em;
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .team {
+        padding-top: 20em;
+    }
+}
+
+@media (min-width: 1480px) {
+    .team {
+        padding-top: 17em;
     }
 }

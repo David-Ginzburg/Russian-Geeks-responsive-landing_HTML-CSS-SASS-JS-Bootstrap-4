@@ -1,0 +1,124 @@
+.assignment {
+    margin-top: 3em;
+    .container {
+        padding: 0;
+    }
+    &-item {
+        position: relative;
+        overflow: hidden;
+        min-height: 40em;
+        padding: 2em;
+        &__descr {
+            padding: 2em;
+        }
+        &__text {
+            margin-top: 2em;
+            font-weight: var(--fw-semi-bold);
+            &-small {
+                font-size: calc(var(--fs-body) * 0.714);
+                font-weight: var(--fw-regular);
+            }
+        }
+        &__form {
+            width: 40%;
+        }
+        &__input {
+            width: 100%;
+            margin-bottom: 2em;
+            padding: 0.5em;
+            border: none;
+            border-bottom: 1px solid var(--clr-light);
+            background-color: var(--clr-purple);
+            color: var(--clr-light);
+            &::placeholder {
+                color: var(--clr-light);
+                opacity: 0.7;
+            }
+        }
+        .btn {
+            width: 100%;
+        }
+        &__wrapper {
+            position: absolute;
+            right: -7em;
+            bottom: 0;
+            width: 18.5em;
+            height: 19.285em;
+            &_wide {
+                width: 25.285em;
+                height: 21.142em;
+                right: -11em;
+            }
+        }
+        &__pic {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .assignment {
+        &-item {
+            min-height: 32em;
+            padding: 0;
+            &__form {
+                width: 50%;
+            }
+            &__wrapper {
+                right: 0;
+                bottom: 2em;
+                &_wide {
+                    right: -4em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .assignment {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10em;
+            background: url('../img/backgrounds_big/description_stroke.png') no-repeat center / 100% 100%;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        &-item {
+            min-height: 20em;
+            &__text {
+                margin-top: 4em;
+                &-small {
+                    margin-top: 2em;
+                    font-size: var(--fs-body);
+                }
+            }
+            &__form {
+                width: 100%;
+                margin-top: 1em;
+            }
+            &__wrapper {
+                position: static;
+                margin-top: 3em;
+                &_wide {
+                    margin-top: 1em;
+                }
+            }
+            &__pic {
+                transform: rotateY(0deg);
+            }
+            &__input {
+                width: 27%;
+            }
+            .btn {
+                width: 27%;
+            }
+        }
+    }
+}
