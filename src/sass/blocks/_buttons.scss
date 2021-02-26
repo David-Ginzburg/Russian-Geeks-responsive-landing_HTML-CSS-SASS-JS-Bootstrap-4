@@ -38,6 +38,13 @@
         &_big {
             font-size: calc(var(--fs-body) * 1.111);
         }
+        &_transparent {
+            &:hover {
+                background-color: var(--clr-orange);
+                color: var(--clr-dark);
+                border: none;
+            }
+        }
     }
 }
 

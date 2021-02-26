@@ -72,6 +72,11 @@
                     margin-left: 3em;
                     color: var(--clr-dark);
                     border-color: var(--clr-dark);
+                    &:hover {
+                        background-color: var(--clr-orange);
+                        color: var(--clr-dark);
+                        border: none;
+                    }
                 }
             }
             &_purple {
