@@ -58,7 +58,8 @@
             text-align: left;
         }
         &__wrapper {
-            grid-template-columns: repeat(3, 16.85em);
+            margin-left: 7em;
+            grid-template-columns: repeat(3, 13em);
             row-gap: 3em;
             column-gap: 6em;
         }
@@ -69,8 +70,8 @@
             }
             &__photo {
                 margin-left: 0;
-                width: 13em;
-                height: 13em;
+                width: 10em;
+                height: 10em;
             }
         }
     }

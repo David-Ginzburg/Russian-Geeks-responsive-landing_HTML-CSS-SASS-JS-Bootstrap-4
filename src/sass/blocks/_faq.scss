@@ -1,0 +1,97 @@
+.faq {
+    position: relative;
+    padding-top: 15em;
+    margin-top: -5em;
+    margin-bottom: -30em;
+    min-height: 125em;
+    background: url('../img/backgrounds_big/faq.png') no-repeat left / 100% 100%;
+    color: var(--clr-dark);
+    &::before {
+        content: "";
+        position: absolute;
+        top: -45em;
+        background: url('../img/backgrounds_big/faq_stroke.png') no-repeat center / 100% 30%;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    &__wrapper {
+        margin-top: 3em;
+    }
+    &-item {
+        border: 1px solid var(--clr-purple);
+        border-radius: 15px;
+        margin-bottom: 0.5em;
+        padding: 0.5em;
+        overflow: hidden;
+        &__header {
+            border: none;
+            background-color: var(--clr-light);
+            &[aria-expanded="true"] .faq-item__sign {
+                transform: rotate(-45deg);
+            }
+        }
+        &__title {
+            color: var(--clr-purple);
+            font-size: calc(var(--fs-body) * 1.333);
+            font-weight: var(--fw-semi-bold);
+            margin-bottom: 0;
+        }
+        &__sign {
+            position: relative;
+            margin-left: auto;
+            width: 2.4em;
+            height: 2.4em;
+            flex-shrink: 0;
+            transition: 0.6s all;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-30%);
+                width: 100%;
+                height: 3px;
+                background-color: var(--clr-orange);;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-40%);
+                width: 3px;
+                height: 100%;
+                background-color: var(--clr-orange);
+            }
+        }
+        &__body {
+            color: var(--clr-dark);
+            font-weight: var(--fw-regular);
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .faq {
+        padding-top: 15em;
+        margin-top: -5em;
+        margin-bottom: -25em;
+        min-height: 100em;
+        &::before {
+            top: -35em;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .faq {
+        padding-top: 10em;
+        margin-top: -5em;
+        margin-bottom: -22em;
+        min-height: 85em;
+        &::before {
+            top: -32em;
+        }
+    }
+}
