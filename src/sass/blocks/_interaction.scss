@@ -1,0 +1,75 @@
+.interaction {
+    padding: 1em;
+    padding-top: 9em;
+    min-height: 68em;
+    background: url('../img/backgrounds_small/interaction.png') no-repeat center / 100% 140%;
+    color: var(--clr-dark);
+    &__text {
+        margin-top: 2.142em;
+    }
+    &__wrapper {
+        overflow: hidden;
+    }
+    &-list {
+        margin-top: 2em;
+        &__item {
+            max-width: 20em;
+            &-sign {
+                width: 2.571em;
+                height: 2.571em;
+                margin-right: 1em;
+                border-radius: 100%;
+                background-color: var(--clr-orange);
+                flex-shrink: 0;
+                color: var(--clr-light);
+            }
+        }
+    }
+    &__pic {
+        width: 23em;
+        height: 15em;
+    }
+}
+
+@media (min-width: 768px) {
+    .interaction {
+        padding-top: 20em;
+        margin-top: -8em;
+        min-height: 70em;
+        background: url('../img/backgrounds_big/interaction.png') no-repeat center / 100% 100%;
+        &-list {
+            margin-top: 2em;
+            &__item {
+                max-width: unset;
+                margin-top: 2em;
+            }
+        }
+        &__pic {
+            width: 30.27em;
+            height: 20.166em;
+            margin-right: 1em;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .interaction {
+        padding-top: 17em;
+        min-height: 60em;
+        &__pic {
+            margin-right: 5em;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .interaction {
+        padding-top: 20em;
+    }
+}
+
+@media (min-width: 1480px) {
+    .interaction {
+        padding-top: 17em;
+    }
+}

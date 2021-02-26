@@ -1,24 +1,49 @@
-@mixin before_circles {
+@mixin before_circles_orange {
     &::before {
         content: "";
         position: absolute;
-        z-index: 2;
         top: -5%;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        left: -5%;
+        width: 110%;
+        height: 110%;
         border-radius: 100%;
         background-color: var(--clr-orange);
+        z-index: -1;
     }
     &::after {
         content: "";
         position: absolute;
-        z-index: 3;
-        top: -10%;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: -5%;
+        left: -5%;
+        width: 105%;
+        height: 105%;
         border-radius: 100%;
         background-color: var(--clr-purple);
+        z-index: -1;
+    }
+}
+
+@mixin before_circles_white {
+    &::before {
+        content: "";
+        position: absolute;
+        top: -5%;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+        border-radius: 100%;
+        background-color: var(--clr-light);
+        z-index: -1;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: -5%;
+        left: -5%;
+        width: 105%;
+        height: 105%;
+        border-radius: 100%;
+        background-color: var(--clr-purple);
+        z-index: -1;
     }
 }
