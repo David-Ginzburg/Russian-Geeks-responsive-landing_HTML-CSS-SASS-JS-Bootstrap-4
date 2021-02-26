@@ -1,0 +1,96 @@
+.footer {
+    min-height: 30em;
+    margin-top: 2em;
+    padding-top: 5em;
+    padding-bottom: 4em;
+    background: url('../img/backgrounds_small/footer.png') no-repeat center / 100% 100%;
+    color: var(--clr-dark);
+    &__contacts {
+        border-bottom: 3px solid var(--clr-purple);
+        padding-bottom: 3em;
+        &-items {
+            text-align: center;
+        }
+    }
+    &__logo {
+        width: 8.428em;
+        height: 7.285em;
+        margin-bottom: 3em;
+        flex-shrink: 0;
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__menu {
+        margin-top: 3em;
+    }
+    &__document {
+        text-align: center;
+        margin-top: 0.3em;
+        &-link {
+            font-size: calc(var(--fs-body) * 0.857);
+            font-weight: var(--fw-bold);
+            color: var(--clr-dark);
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        min-height: auto;
+        padding: 1em 0;
+        box-shadow: 0px -10px 30px rgba(181, 181, 181, 0.25);
+        background-color: var(--clr-light);
+        &__logo {
+            margin-bottom: 0;
+        }
+        &__contacts {
+            border-bottom: none;
+            padding-bottom: 0;
+            border-right: 3px solid var(--clr-purple);
+            &-items {
+                text-align: left;
+                font-size: calc(var(--fs-body) * 0.944);
+            }
+        }
+        &__menu {
+            margin-top: 0;
+            &-items {
+                flex-shrink: 0;
+                &:first-child {
+                    margin-right: 4em;
+                }
+            }
+            &-item {
+                margin-bottom: 1em;
+            }
+            &-link {
+                color: var(--clr-dark);
+            }
+        }
+        &__documents {
+            flex-shrink: 0;
+        }
+        &__document {
+            text-align-last: left;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    @media (min-width: 768px) {
+        .footer {
+            &__logo {
+                margin-right: 3em;
+            }
+            &__contacts {
+                &-items {
+                    font-size: var(--fs-body);
+                }
+            }
+        }
+    }
+}
