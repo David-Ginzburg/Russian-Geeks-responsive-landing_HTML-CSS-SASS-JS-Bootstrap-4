@@ -12,6 +12,13 @@
     &__cases {
         margin-top: 3.88em;
     }
+    &__wrapper {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        z-index: 2;
+    }
     &__vertical-chart {
         position: absolute;
         width: 8.285em;
@@ -50,6 +57,11 @@
             font-size: calc(var(--fs-body) * 2);
             margin-top: 0;
             width: unset;
+        }
+        &__wrapper {
+            position: absolute;
+            bottom: 22em;
+            right: 0;
         }
         &__vertical-chart {
             width: 11.277em;
