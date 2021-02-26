@@ -78,8 +78,8 @@
                 <h2 class="development-form__title">Нет времени читать?</h2>
                 <div class="development-form__subtitle">Узнайте стоимость и сроки уже на первой консультации</div>
                 <div class="d-flex justify-content-between">
-                    <input type="tel" class="development-form__input" placeholder="Телефон" required>
-                    <input type="text" class="development-form__input" placeholder="Имя" required>
+                    <input type="tel" class="development-form__input" placeholder="Телефон" name="phone" required>
+                    <input type="text" class="development-form__input" placeholder="Имя" name="name" required>
                     <button type="submit" class="btn">Отправить</button>
                 </div>
             </form>
@@ -322,8 +322,8 @@
                         <p class="assignment-item__text">Наши ТЗ  разработано таким образом, чтобы не только дать понять полный объём разработке, но и чтобы не забыть про какие-то мелочи и другие вещи важные для целостности проекта</p>
                         <p class="assignment-item__text-small">Отправьте нам свою почту и получите <span class="title_yellow">пример ТЗ</span></p>
                         <form class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
-                            <input type="email" class="assignment-item__input" placeholder="Почта" required>
-                            <input type="text" class="assignment-item__input" placeholder="Имя" required>
+                            <input type="email" class="assignment-item__input" placeholder="Почта" name="email" required>
+                            <input type="text" class="assignment-item__input" placeholder="Имя" name="name" required>
                             <button type="submit" class="btn">Отправить</button>
                         </form>
                     </div>
@@ -338,8 +338,8 @@
                         <p class="assignment-item__text">Наши ТЗ  разработано таким образом, чтобы не только дать понять полный объём разработке, но и чтобы не забыть про какие-то мелочи и другие вещи важные для целостности проекта</p>
                         <p class="assignment-item__text-small">Отправьте нам свою почту и получите <span class="title_yellow">пример договора</span></p>
                         <form class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
-                            <input type="email" class="assignment-item__input" placeholder="Почта" required>
-                            <input type="text" class="assignment-item__input" placeholder="Имя" required>
+                            <input type="email" class="assignment-item__input" placeholder="Почта" name="email" required>
+                            <input type="text" class="assignment-item__input" placeholder="Имя" name="name" required>
                             <button type="submit" class="btn">Отправить</button>
                         </form>
                     </div>
@@ -547,7 +547,7 @@
                 <div class="faq__wrapper" id="faq">
 
                     <div class="card faq-item">
-                      <div class="card-header d-flex align-items-center faq-item__header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="rowheader">
+                      <div class="card-header d-flex align-items-center faq-item__header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="row">
                         <h3 class="faq-item__title">Что делать если я не совсем понимаю что я хочу</h3>
                         <div class="faq-item__sign"></div>
                       </div>
@@ -559,7 +559,7 @@
                     </div>
 
                     <div class="card faq-item">
-                      <div class="card-header d-flex align-items-center faq-item__header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="rowheader">
+                      <div class="card-header d-flex align-items-center faq-item__header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="row">
                         <h3 class="faq-item__title">Как происходит оплата</h3>
                         <div class="faq-item__sign"></div>
                       </div>
@@ -571,7 +571,7 @@
                     </div>
 
                     <div class="card faq-item">
-                        <div class="card-header d-flex align-items-center faq-item__header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="rowheader">
+                        <div class="card-header d-flex align-items-center faq-item__header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="row">
                           <h3 class="faq-item__title">Что нужно чтобы начать</h3>
                           <div class="faq-item__sign"></div>
                         </div>
@@ -583,7 +583,7 @@
                     </div>
 
                     <div class="card faq-item">
-                        <div class="card-header d-flex align-items-center faq-item__header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" role="rowheader">
+                        <div class="card-header d-flex align-items-center faq-item__header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" role="row">
                           <h3 class="faq-item__title">Как долго будет разрабатываться моё мобильное приложение</h3>
                           <div class="faq-item__sign"></div>
                         </div>
@@ -595,7 +595,7 @@
                     </div>
 
                     <div class="card faq-item">
-                        <div class="card-header d-flex align-items-center faq-item__header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" role="rowheader">
+                        <div class="card-header d-flex align-items-center faq-item__header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" role="row">
                           <h3 class="faq-item__title">Что если я передумаю, или мы поймём что что это решение нам не нужно</h3>
                           <div class="faq-item__sign"></div>
                         </div>
@@ -640,13 +640,13 @@
                         </p>
                         <form class="contacts-form">
                             <div class="d-flex flex-column contacts-form__wrapper">
-                                <input type="text" class="contacts-form__input" placeholder="Ваше имя" required>
-                                <input type="text" class="contacts-form__input" placeholder="Компания" required>
-                                <input type="email" class="contacts-form__input" placeholder="Почта" required>
-                                <textarea name="" cols="30" rows="5" class="contacts-form__textarea" placeholder="Описание идеи" required></textarea>
+                                <input type="text" class="contacts-form__input" placeholder="Ваше имя" name="name" required>
+                                <input type="text" class="contacts-form__input" placeholder="Компания" name="company" required>
+                                <input type="email" class="contacts-form__input" placeholder="Почта" name="email" required>
+                                <textarea name="" cols="30" rows="5" class="contacts-form__textarea" name="text" placeholder="Описание идеи" required></textarea>
                             </div>
                             <div class="d-flex justify-content-between align-items-center contacts-form__submit">
-                                <input type="checkbox" class="contacts-form__checkbox" required>
+                                <input type="checkbox" class="contacts-form__checkbox" name="privacy" required>
                                 <div class="contacts-form__text">Соглашаюсь на <a class="contacts-form__link" href=#>Terms and Conditions</a></div>
                                 <button class="btn" type="submit">Отправить</button>
                             </div>
