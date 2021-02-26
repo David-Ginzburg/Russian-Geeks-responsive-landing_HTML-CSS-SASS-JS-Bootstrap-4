@@ -9275,7 +9275,7 @@ body {
   color: var(--clr-dark);
 }
 
-.menu__list-item.active a {
+.menu__list-item:hover a {
   color: var(--clr-orange);
 }
 
@@ -10066,10 +10066,10 @@ body {
 
 @media (min-width: 768px) {
   .cases {
-    margin-top: -18em;
-    padding-top: 32em;
-    min-height: 110em;
-    background: url("../img/backgrounds_big/cases.png") no-repeat left/100% 100%;
+    margin-top: -43em;
+    padding-top: 63em;
+    min-height: 180em;
+    background: url("../img/backgrounds_big/cases.png") no-repeat center/100% 70%;
   }
   .cases__wrapper {
     margin-top: 4em;
@@ -10207,6 +10207,7 @@ body {
 
 @media (min-width: 768px) {
   .team {
+    margin-top: -30em;
     padding-top: 5em;
   }
   .team__title {
@@ -10460,16 +10461,17 @@ body {
 
 .contacts-form__checkbox {
   margin-left: 0.5em;
-  margin-right: 1em;
-  width: 1.5em;
-  height: 1.5em;
+  margin-right: 1.5em;
+  width: 1em;
+  height: 1em;
+  -webkit-transform: scale(2, 2);
   flex-shrink: 0;
 }
 
 .contacts-form__text {
   font-size: calc(var(--fs-body) * 0.888);
   font-weight: var(--fw-semi-bold);
-  margin-right: 0.5em;
+  margin-right: 1.5em;
 }
 
 .contacts-form__link {
@@ -10552,6 +10554,7 @@ body {
   }
   .footer__menu {
     margin-top: 0;
+    padding-top: 1em;
   }
   .footer__menu-items {
     flex-shrink: 0;

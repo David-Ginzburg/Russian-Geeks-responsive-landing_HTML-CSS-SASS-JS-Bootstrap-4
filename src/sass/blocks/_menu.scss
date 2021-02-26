@@ -24,10 +24,10 @@
                 white-space: nowrap;
                 color: var(--clr-dark)
             }
-        }
-        &-item.active {
-            a {
-                color: var(--clr-orange)
+            &:hover {
+                a {
+                    color: var(--clr-orange)
+                }
             }
         }
     }

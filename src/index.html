@@ -12,28 +12,28 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md menu">
-            <a class="navbar-brand ml-md-1 menu__logo" href="#">
+            <div class="navbar-brand ml-md-1 menu__logo">
                 <img class="menu__logo-img" src="icons/logo.png" alt="logo">
-            </a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon menu__hamburger"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav justify-content-between m-md-auto col-md-9 col-xl-7 text-center text-md-left menu__list">
-                    <li class="nav-item active menu__list-item">
-                        <a class="nav-link" href="#">О компании<span class="sr-only">(current)</span></a>
+                    <li class="nav-item menu__list-item">
+                        <a class="nav-link" href="#promo">О компании<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item menu__list-item">
-                        <a class="nav-link" href="#">Кейсы</a>
+                        <a class="nav-link" href="#cases">Кейсы</a>
                     </li>
                     <li class="nav-item menu__list-item">
-                        <a class="nav-link" href="#">Услуги</a>
+                        <a class="nav-link" href="#services">Услуги</a>
                     </li>
                     <li class="nav-item menu__list-item">
-                        <a class="nav-link" href="#">Процесс разработки</a>
+                        <a class="nav-link" href="#steps">Процесс разработки</a>
                     </li>
                     <li class="nav-item menu__list-item">
-                        <a class="nav-link" href="#">Команда</a>
+                        <a class="nav-link" href="#team">Команда</a>
                     </li>
                 </ul>
                 <div class="navbar-text d-flex flex-column align-items-center ml-md-auto mr-md-2">
@@ -48,7 +48,7 @@
 
     <main>
     
-        <section class="promo">
+        <section class="promo" id="promo">
             <div class="container">
                 <div class="row no-gutters flex-column align-items-center align-items-md-start text-center text-md-left">
                     <h1 class="title title_big order-md-1 promo__title col-md-4 col-xl-6">Разработка мобильных приложений <span class="title_yellow">IOS</span> и <span class="title_yellow">Android</span></h1>
@@ -78,14 +78,14 @@
                 <h2 class="development-form__title">Нет времени читать?</h2>
                 <div class="development-form__subtitle">Узнайте стоимость и сроки уже на первой консультации</div>
                 <div class="d-flex justify-content-between">
-                    <input type="tel" class="development-form__input" placeholder="Телефон">
-                    <input type="text" class="development-form__input" placeholder="Имя">
+                    <input type="tel" class="development-form__input" placeholder="Телефон" required>
+                    <input type="text" class="development-form__input" placeholder="Имя" required>
                     <button type="submit" class="btn">Отправить</button>
                 </div>
             </form>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h2 class="services__title title">Услуги</h2>
                 <div class="services__subtitle title_yellow">Сферы разработки</div>
@@ -173,7 +173,7 @@
             </div>
         </section>
 
-        <section class="steps">
+        <section class="steps" id="steps">
             <div class="container">
                 <h2 class="title steps__title"><span class="title_yellow">Этапы</span> работы</h2>
                 <ul class="nav nav-pills steps__wrapper" id="pills-tab" role="tablist">
@@ -322,8 +322,8 @@
                         <p class="assignment-item__text">Наши ТЗ  разработано таким образом, чтобы не только дать понять полный объём разработке, но и чтобы не забыть про какие-то мелочи и другие вещи важные для целостности проекта</p>
                         <p class="assignment-item__text-small">Отправьте нам свою почту и получите <span class="title_yellow">пример ТЗ</span></p>
                         <form class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
-                            <input type="email" class="assignment-item__input" placeholder="Почта">
-                            <input type="text" class="assignment-item__input" placeholder="Имя">
+                            <input type="email" class="assignment-item__input" placeholder="Почта" required>
+                            <input type="text" class="assignment-item__input" placeholder="Имя" required>
                             <button type="submit" class="btn">Отправить</button>
                         </form>
                     </div>
@@ -338,8 +338,8 @@
                         <p class="assignment-item__text">Наши ТЗ  разработано таким образом, чтобы не только дать понять полный объём разработке, но и чтобы не забыть про какие-то мелочи и другие вещи важные для целостности проекта</p>
                         <p class="assignment-item__text-small">Отправьте нам свою почту и получите <span class="title_yellow">пример договора</span></p>
                         <form class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
-                            <input type="email" class="assignment-item__input" placeholder="Почта">
-                            <input type="text" class="assignment-item__input" placeholder="Имя">
+                            <input type="email" class="assignment-item__input" placeholder="Почта" required>
+                            <input type="text" class="assignment-item__input" placeholder="Имя" required>
                             <button type="submit" class="btn">Отправить</button>
                         </form>
                     </div>
@@ -350,7 +350,7 @@
             </div>
         </section>
 
-        <section class="cases">
+        <section class="cases" id="cases">
             <div class="container-fluid">
                 <h2 class="title cases__title">Кейсы</h2>
                 <div class="align-items-center cases__wrapper">
@@ -478,7 +478,7 @@
             </div>
         </section>
 
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <h2 class="title team__title">Команда</h2>
                 <div class="team__wrapper">
@@ -640,13 +640,13 @@
                         </p>
                         <form class="contacts-form">
                             <div class="d-flex flex-column contacts-form__wrapper">
-                                <input type="text" class="contacts-form__input" placeholder="Ваше имя">
-                                <input type="text" class="contacts-form__input" placeholder="Компания">
-                                <input type="email" class="contacts-form__input" placeholder="Почта">
-                                <textarea name="" cols="30" rows="5" class="contacts-form__textarea" placeholder="Описание идеи"></textarea>
+                                <input type="text" class="contacts-form__input" placeholder="Ваше имя" required>
+                                <input type="text" class="contacts-form__input" placeholder="Компания" required>
+                                <input type="email" class="contacts-form__input" placeholder="Почта" required>
+                                <textarea name="" cols="30" rows="5" class="contacts-form__textarea" placeholder="Описание идеи" required></textarea>
                             </div>
                             <div class="d-flex justify-content-between align-items-center contacts-form__submit">
-                                <input type="checkbox" class="contacts-form__checkbox">
+                                <input type="checkbox" class="contacts-form__checkbox" required>
                                 <div class="contacts-form__text">Соглашаюсь на <a class="contacts-form__link" href=#>Terms and Conditions</a></div>
                                 <button class="btn" type="submit">Отправить</button>
                             </div>
@@ -673,13 +673,13 @@
                     </div>
                     <div class="d-md-flex justify-content-center align-items-start col-md-6 footer__menu">
                         <div class="d-none d-md-flex flex-column footer__menu-items">
-                            <div class="footer__menu-item"><a class="footer__menu-link" href=#>О компании</a></div>
-                            <div class="footer__menu-item"><a class="footer__menu-link" href=#>Кейсы</a></div>
-                            <div class="footer__menu-item"><a class="footer__menu-link" href=#>Услуги</a></div>
+                            <div class="footer__menu-item"><a class="footer__menu-link" href="#promo">О компании</a></div>
+                            <div class="footer__menu-item"><a class="footer__menu-link" href="#cases">Кейсы</a></div>
+                            <div class="footer__menu-item"><a class="footer__menu-link" href="#services">Услуги</a></div>
                         </div>
                         <div class="d-md-flex flex-column footer__menu-items">
-                            <div class="d-none d-md-block footer__menu-item"><a class="footer__menu-link" href=#>Процесс разработки</a></div>
-                            <div class="d-none d-md-block footer__menu-item"><a class="footer__menu-link" href=#>Команда</a></div>
+                            <div class="d-none d-md-block footer__menu-item"><a class="footer__menu-link" href="#steps">Процесс разработки</a></div>
+                            <div class="d-none d-md-block footer__menu-item"><a class="footer__menu-link" href="#team">Команда</a></div>
                             <div class="align-self-end footer__documents">
                                 <div class="footer__document"><a class="footer__document-link" href="#">Политика конфеденциальности</a></div>
                                 <div class="footer__document"><a class="footer__document-link" href="#">Договор оферты</a></div>

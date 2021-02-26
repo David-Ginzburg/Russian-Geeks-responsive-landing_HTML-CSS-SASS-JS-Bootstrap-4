@@ -1,6 +1,5 @@
 .contacts {
     position: relative;
-    // padding-bottom: 3em;
     &::before {
         content: "";
         position: absolute;
@@ -90,15 +89,16 @@
         }
         &__checkbox {
             margin-left: 0.5em;
-            margin-right: 1em;
-            width: 1.5em;
-            height: 1.5em;
+            margin-right: 1.5em;
+            width: 1em;
+            height: 1em;
+            -webkit-transform: scale(2,2);
             flex-shrink: 0;
         }
         &__text {
             font-size: calc(var(--fs-body) * 0.888);
             font-weight: var(--fw-semi-bold);
-            margin-right: 0.5em;
+            margin-right: 1.5em;
         }
         &__link {
             font-size: calc(var(--fs-body) * 0.888);
