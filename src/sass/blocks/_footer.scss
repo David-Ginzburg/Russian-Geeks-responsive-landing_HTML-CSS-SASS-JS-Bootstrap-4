@@ -27,6 +27,7 @@
         margin-top: 3em;
     }
     &__link {
+        word-break: break-all;
         color: var(--clr-purple);
         &:hover {
             color: var(--clr-purple);

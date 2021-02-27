@@ -9,6 +9,9 @@
     line-height: 1em;
     color: var(--clr-light);
     z-index: 3;
+    &:focus {
+        box-shadow: none;
+    }
     &_small {
         font-size: calc(var(--fs-body) * 0.928);
         font-weight: var(--fw-extra-bold);

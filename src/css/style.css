@@ -12559,6 +12559,10 @@ body {
   z-index: 3;
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
 .btn_small {
   font-size: calc(var(--fs-body) * 0.928);
   font-weight: var(--fw-extra-bold);
@@ -13913,6 +13917,7 @@ body {
 }
 
 .footer__link {
+  word-break: break-all;
   color: var(--clr-purple);
 }
 
@@ -13982,5 +13987,129 @@ body {
   }
   .footer__contacts-items {
     font-size: var(--fs-body);
+  }
+}
+
+.modal {
+  color: var(--clr-dark);
+}
+
+.modal-dialog {
+  max-width: 85%;
+}
+
+.modal-stroke {
+  width: 100%;
+  height: 1em;
+  background-color: var(--clr-purple);
+  border-radius: 5px 5px 0px 0px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.modal-content {
+  border-radius: 0px 0px 20px 20px;
+  border: 1px solid #CED6DE;
+  padding: 2em;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.modal-header {
+  border: none;
+  padding-bottom: 0;
+}
+
+.modal-title {
+  font-size: calc(var(--fs-body) * 1.714);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.214;
+}
+
+.modal .close {
+  color: var(--clr-dark);
+}
+
+.modal .close span {
+  font-size: calc(var(--fs-body) * 2);
+}
+
+.modal-subtitle {
+  font-size: calc(var(--fs-body) * 1.1666);
+  font-weight: var(--fw-regular);
+  line-height: 1.214;
+}
+
+.modal-form {
+  margin-top: 2em;
+}
+
+.modal-form__input {
+  width: 100%;
+  border-radius: 100px;
+  border: 1px solid #BAC2CA;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  padding-left: 2em;
+  outline: none;
+}
+
+.modal-form__input::-moz-placeholder {
+  color: #7E868E;
+}
+
+.modal-form__input::placeholder {
+  color: #7E868E;
+}
+
+.modal-form__btn {
+  width: 100%;
+}
+
+.modal-form__policy {
+  margin-top: 1.5em;
+}
+
+.modal-form__policy-text {
+  font-size: calc(var(--fs-body) * 0.614);
+  font-weight: var(--fw-regular);
+  color: #7E868E;
+}
+
+.modal-form__policy-link {
+  font-size: calc(var(--fs-body) * 0.614);
+  font-weight: var(--fw-regular);
+  color: #7E868E;
+  text-decoration: underline;
+}
+
+.modal-form__policy-link:hover {
+  color: #7E868E;
+}
+
+.modal-form__checkbox {
+  margin-right: 1em;
+}
+
+@media (min-width: 768px) {
+  .modal-stroke {
+    margin-top: 7em;
+  }
+  .modal-form__input {
+    width: 31%;
+    height: 3.5em;
+    margin-bottom: 0;
+  }
+  .modal-form__submit {
+    width: 35%;
+  }
+  .modal-form__btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 70%;
   }
 }
