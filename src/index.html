@@ -55,7 +55,7 @@
                 <div class="row no-gutters flex-column align-items-center align-items-md-start text-center text-md-left">
                     <h1 class="title title_big order-md-1 promo__title col-md-4 col-xl-6">Разработка мобильных приложений <span class="title_yellow">IOS</span> и <span class="title_yellow">Android</span></h1>
                     <h2 class="title title_small order-md-0 promo__subtitle col-md-6 col-xl-8">Воплощаем Ваши бизнес идеи в мобильной среде</h2>
-                    <button type="button" class="btn btn_big d-md-none order-2 promo__project">Обсудить проект</button>
+                    <button type="button" class="btn btn_big d-md-none order-2 promo__project"><a class="promo__link" href="#contacts">Обсудить проект</a></button>
                     <button type="button" class="btn btn_big d-none d-md-block order-2 promo__btn"><a class="promo__link" href="#cases">Посмотреть кейсы</a></button>
                     <div class="promo__wrapper">
                         <img src="img/vertical-chart.png" alt="vertical-chart" class="promo__vertical-chart">
@@ -160,7 +160,7 @@
                 <div class="container">
                     <div class="row no-gutters">
                         <div class="d-flex flex-column col-md-6">
-                            <h3 class="services-block__title title title_small"><span class="title_yellow">Автомат</span> бизнес-процесса</h3>
+                            <h3 class="services-block__title title title_small"><span class="title_yellow">Автоматизация</span> бизнес-процесса</h3>
                             <p class="services-block__text">
                                 Мобильное приложение также помогают автоматизировать и усовершенствовать ваши бизнес-процессы точка будто взаимодействие с курьерами, работниками ми-ми или просто процессами документооборота в вашей компании, всё это может быть на высочайшем уровне с помощью наших мобильных разработок для вашего бизнеса.
                             </p>
@@ -354,10 +354,10 @@
             </div>
         </section>
 
-        <section class="cases animate__animated animate__fadeInUp wow" id="cases">
+        <section class="cases animate__animated animate__fadeInUp wow" >
             <div class="container-fluid">
                 <h2 class="title cases__title">Кейсы</h2>
-                <div class="align-items-center cases__wrapper">
+                <div class="align-items-center cases__wrapper" id="cases">
 
                     <div class="cases-item animate__animated animate__fadeInUp wow cases-item_purple">
                         <div class="d-flex flex-column cases-item__top-wrapper">
@@ -376,7 +376,7 @@
                         </div>
                     </div>
 
-                    <div class="cases-item animate__animated animate__fadeInUp wow cases-item_orange">
+                    <div data-toggle="modal" data-target="#caseTaxi" class="cases-item animate__animated animate__fadeInUp wow cases-item_orange">
                         <div class="d-flex flex-column cases-item__top-wrapper">
                             <div class="cases-item__top-pic">
                                 <img src="img/cases/logo/lbtaxi.png" alt="lbtaxi" class="cases-item__top-logo">
@@ -482,6 +482,35 @@
             </div>
         </section>
 
+        <div class="modal fade" id="caseTaxi" tabindex="-1" aria-labelledby="caseTaxiLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog_case modal-xl">
+                <div class="modal-stroke"></div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="caseTaxiLabel">Оставьте контактные данные и мы пришлем вам пример техничекого задания</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="d-flex flex-column flex-md-row justify-content-md-between modal-form">
+                            <input type="email" name="email" class="modal-form__input modal-form__input_tel" placeholder="name@domen.ru" required>
+                            <input type="name" name="name" class="modal-form__input modal-form__input_name" placeholder="Ваше имя" required>
+                            <div class="d-flex flex-column modal-form__submit">
+                                <button class="btn modal-form__btn">Отправить</button>
+                                <div class="d-flex align-items-center justify-content-md-center modal-form__policy">
+                                    <input class="modal-form__checkbox" type="checkbox" name="policy" required>
+                                    <div class="modal-form__policy-text">
+                                        Соглашаюсь с <a class="modal-form__policy-link" href="#">условиями передачи данных</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="team animate__animated animate__fadeInUp wow" id="team">
             <div class="container">
                 <h2 class="title team__title">Команда</h2>
@@ -552,7 +581,7 @@
 
                     <div class="card faq-item">
                       <div class="card-header d-flex align-items-center faq-item__header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="treegrid">
-                        <h3 class="faq-item__title">Что делать если я не совсем понимаю что я хочу</h3>
+                        <h3 class="faq-item__title">Что делать если я не совсем понимаю что я хочу?</h3>
                         <div class="faq-item__sign"></div>
                       </div>
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faq">
@@ -564,7 +593,7 @@
 
                     <div class="card faq-item">
                       <div class="card-header d-flex align-items-center faq-item__header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="treegrid">
-                        <h3 class="faq-item__title">Как происходит оплата</h3>
+                        <h3 class="faq-item__title">Как происходит оплата?</h3>
                         <div class="faq-item__sign"></div>
                       </div>
                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq">
@@ -576,7 +605,7 @@
 
                     <div class="card faq-item">
                         <div class="card-header d-flex align-items-center faq-item__header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="treegrid">
-                          <h3 class="faq-item__title">Что нужно чтобы начать</h3>
+                          <h3 class="faq-item__title">Что нужно чтобы начать?</h3>
                           <div class="faq-item__sign"></div>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq">
@@ -588,7 +617,7 @@
 
                     <div class="card faq-item">
                         <div class="card-header d-flex align-items-center faq-item__header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" role="treegrid">
-                          <h3 class="faq-item__title">Как долго будет разрабатываться моё мобильное приложение</h3>
+                          <h3 class="faq-item__title">Как долго будет разрабатываться моё мобильное приложение?</h3>
                           <div class="faq-item__sign"></div>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faq">
@@ -600,7 +629,7 @@
 
                     <div class="card faq-item">
                         <div class="card-header d-flex align-items-center faq-item__header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" role="treegrid">
-                          <h3 class="faq-item__title">Что если я передумаю, или мы поймём что что это решение нам не нужно</h3>
+                          <h3 class="faq-item__title">Что если я передумаю, или мы поймём что что это решение нам не нужно?</h3>
                           <div class="faq-item__sign"></div>
                         </div>
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faq">
@@ -614,7 +643,7 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <div class="row no-gutters flex-column flex-md-row justify-content-md-between contacts__wrapper">
                     <div class="col-md-5 contacts__items">

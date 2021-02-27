@@ -13998,6 +13998,10 @@ body {
   max-width: 85%;
 }
 
+.modal-dialog_case {
+  max-width: 95%;
+}
+
 .modal-stroke {
   width: 100%;
   height: 1em;
@@ -14111,5 +14115,8 @@ body {
 @media (min-width: 992px) {
   .modal-dialog {
     max-width: 70%;
+  }
+  .modal-dialog_case {
+    max-width: 95%;
   }
 }
