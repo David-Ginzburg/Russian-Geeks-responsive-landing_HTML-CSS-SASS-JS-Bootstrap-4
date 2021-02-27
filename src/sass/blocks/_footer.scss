@@ -26,6 +26,12 @@
     &__menu {
         margin-top: 3em;
     }
+    &__link {
+        color: var(--clr-purple);
+        &:hover {
+            color: var(--clr-purple);
+        }
+    }
     &__document {
         text-align: center;
         margin-top: 0.3em;

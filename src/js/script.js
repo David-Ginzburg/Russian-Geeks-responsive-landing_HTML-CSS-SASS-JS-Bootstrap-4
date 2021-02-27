@@ -1,21 +1,52 @@
-/* parallax */
+/* birtix */
 
-let promoIphone = document.querySelector('.promo__wrapper');
-let developmentPic = document.querySelector('.development__pic');
-let servicestPics = document.querySelectorAll('.services-block__pic');
-let stepsPics = document.querySelectorAll('.steps-item__pic');
-let interactionPic = document.querySelector('.interaction__pic');
-let aassignmentPics = document.querySelectorAll('.assignment-item__pic');
+(function(w,d,u){
+    var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+})(window,document,'https://cdn-ru.bitrix24.ru/b13408356/crm/site_button/loader_1_aucz4w.js');
 
-window.addEventListener('mousemove', (e) => {
-    let x = e.clientX / window.innerWidth
-    let y = e.clientY / window.innerHeight
+/* wow */
 
-    let target = `translate(-${x * 50}px, -${y * 50}px)`
-    promoIphone.style.transform = target
-    developmentPic.style.transform = target
-    servicestPics.forEach(item => item.style.transform = target)
-    stepsPics.forEach(item => item.style.transform = target)
-    interactionPic.style.transform = target
-    aassignmentPics.forEach(item => item.style.transform = target)
-});
+new WOW().init();
+
+/* quiz */
+
+(function(w, d, s, o){
+    var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+        if (document.readyState !== 'loading') Marquiz.init(o);
+        else document.addEventListener("DOMContentLoaded", function() {
+            Marquiz.init(o);
+        });
+    };
+    d.head.insertBefore(j, d.head.firstElementChild);
+  })(window, document, 'script', {
+      host: '//quiz.marquiz.ru',
+      id: '603a383d46c60b00440c0711',
+      autoOpen: false,
+      autoOpenFreq: 'once',
+      openOnExit: false,
+      disableOnMobile: false
+    }
+  );
+  
+(function(t, p){
+    window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {
+        Marquiz.add([t, p])
+    })
+})('Pop', {
+    id: '603a048845f8ea0044060b62',
+    title: 'Пройти тест',
+    text: 'Пройти тест',
+    delay: 11,
+    textColor: '#ffffff',
+    bgColor: '#f1a431',
+    bonusCount: 2,
+    bonusText: 'Вам доступны бонусы и скидка',
+    type: 'full',
+    position: 'position_top',
+    shadow: 'rgba(55, 41, 126, 0)',
+    blicked: true,
+    pulse: 'rgba(55, 41, 126, 0.4)',
+    svgColor: '#fff',
+    closeColor: '#fff'}
+)

@@ -12556,7 +12556,7 @@ body {
   font-weight: var(--fw-bold);
   line-height: 1em;
   color: var(--clr-light);
-  z-index: 1;
+  z-index: 3;
 }
 
 .btn_small {
@@ -12681,8 +12681,18 @@ body {
   margin-top: 1.142em;
 }
 
-.promo__cases {
+.promo__btn {
   margin-top: 3.88em;
+}
+
+.promo__link {
+  color: var(--clr-light);
+  text-decoration: none;
+}
+
+.promo__link:hover {
+  color: var(--clr-dark);
+  text-decoration: none;
 }
 
 .promo__wrapper {
@@ -12708,8 +12718,7 @@ body {
   height: 22.5em;
   cursor: pointer;
   bottom: -22em;
-  right: 50%;
-  transform: translateX(50%);
+  left: -6em;
   z-index: 1;
 }
 
@@ -12750,6 +12759,7 @@ body {
     height: 27.111em;
     top: 5em;
     right: 12em;
+    left: unset;
     transform: unset;
   }
   .promo__round-diagram {
@@ -13900,6 +13910,14 @@ body {
 
 .footer__menu {
   margin-top: 3em;
+}
+
+.footer__link {
+  color: var(--clr-purple);
+}
+
+.footer__link:hover {
+  color: var(--clr-purple);
 }
 
 .footer__document {

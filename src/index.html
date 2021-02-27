@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
@@ -54,15 +55,35 @@
                     <h1 class="title title_big order-md-1 promo__title col-md-4 col-xl-6">Разработка мобильных приложений <span class="title_yellow">IOS</span> и <span class="title_yellow">Android</span></h1>
                     <h2 class="title title_small order-md-0 promo__subtitle col-md-6 col-xl-8">Воплощаем Ваши бизнес идеи в мобильной среде</h2>
                     <button type="button" class="btn btn_big d-md-none order-2 promo__project">Обсудить проект</button>
-                    <button type="button" class="btn btn_big d-none d-md-block order-2 promo__cases">Посмотреть кейсы</button>
+                    <button type="button" class="btn btn_big d-none d-md-block order-2 promo__btn"><a class="promo__link" href="#cases">Посмотреть кейсы</a></button>
                     <div class="promo__wrapper">
                         <img src="img/vertical-chart.png" alt="vertical-chart" class="promo__vertical-chart">
-                        <img src="img/iphone.png" alt="iphone" class="promo__iphone">
+                        <img src="img/iphone.png" alt="iphone" class="promo__iphone animate__animated animate__infinite animate__slow animate__pulse wow">
                         <img src="img/round-diagram.png" alt="round-diagram" class="promo__round-diagram">
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jjPnXI18mag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <section class="development animate__animated animate__fadeInUp wow">
             <div class="container">
@@ -357,7 +378,7 @@
                 <h2 class="title cases__title">Кейсы</h2>
                 <div class="align-items-center cases__wrapper">
 
-                    <div class="cases-item cases-item_purple">
+                    <div class="cases-item animate__animated animate__fadeInUp wow cases-item_purple">
                         <div class="d-flex flex-column cases-item__top-wrapper">
                             <div class="cases-item__top-pic">
                                 <img src="img/cases/logo/terra.png" alt="International Terra Node Group" class="cases-item__top-logo">
@@ -374,7 +395,7 @@
                         </div>
                     </div>
 
-                    <div class="cases-item cases-item_orange">
+                    <div class="cases-item animate__animated animate__fadeInUp wow cases-item_orange">
                         <div class="d-flex flex-column cases-item__top-wrapper">
                             <div class="cases-item__top-pic">
                                 <img src="img/cases/logo/lbtaxi.png" alt="lbtaxi" class="cases-item__top-logo">
@@ -391,7 +412,7 @@
                         </div>
                     </div>
 
-                    <div class="cases-item cases-item_purple">
+                    <div class="cases-item animate__animated animate__fadeInUp wow cases-item_purple">
                         <div class="d-flex flex-column cases-item__top-wrapper">
                             <div class="cases-item__top-pic">
                                 <img src="img/cases/logo/medel.png" alt="Medel Health Care" class="cases-item__top-logo">
@@ -408,7 +429,7 @@
                         </div>
                     </div>
 
-                    <div class="cases-item cases-item_orange">
+                    <div class="cases-item animate__animated animate__fadeInUp wow cases-item_orange">
                         <div class="d-flex flex-column cases-item__top-wrapper">
                             <div class="cases-item__top-pic">
                                 <img src="img/cases/logo/betting.png" alt="Betting App" class="cases-item__top-logo">
@@ -425,7 +446,7 @@
                         </div>
                     </div>
 
-                    <div class="cases-item cases-item_purple">
+                    <div class="cases-item animate__animated animate__fadeInUp wow cases-item_purple">
                         <div class="d-flex flex-column cases-item__top-wrapper">
                             <div class="cases-item__top-pic">
                                 <img src="img/cases/logo/zakazcoffee.png" alt="Zakazcoffee" class="cases-item__top-logo">
@@ -442,7 +463,7 @@
                         </div>
                     </div>
 
-                    <div class="cases-item cases-item_orange">
+                    <div class="cases-item animate__animated animate__fadeInUp wow cases-item_orange">
                         <div class="d-flex flex-column cases-item__top-wrapper">
                             <div class="cases-item__top-pic">
                                 <img src="img/cases/logo/rehau.png" alt="Betting App" class="cases-item__top-logo">
@@ -459,7 +480,7 @@
                         </div>
                     </div>
 
-                    <div class="cases-item cases-item_purple">
+                    <div class="cases-item animate__animated animate__fadeInUp wow cases-item_purple">
                         <div class="d-flex flex-column cases-item__top-wrapper">
                             <div class="cases-item__top-pic">
                                 <img src="img/cases/logo/bchp.png" alt="Zakazcoffee" class="cases-item__top-logo">
@@ -485,7 +506,7 @@
                 <h2 class="title team__title">Команда</h2>
                 <div class="team__wrapper">
 
-                    <div class="d-flex flex-column team-item">
+                    <div class="d-flex flex-column team-item animate__animated animate__fadeInUp wow">
                         <div class="team-item__photo team-item__photo_orange">
                             <img src="img/team/team_pic1.png" alt="Сергей Евгеньевич" class="team-item__pic">
                         </div>
@@ -494,7 +515,7 @@
                         <div class="team-item__descr">Бизнесмен, управленец, инфлуенсер</div>
                     </div>
 
-                    <div class="d-flex flex-column team-item">
+                    <div class="d-flex flex-column team-item animate__animated animate__fadeInUp wow">
                         <div class="team-item__photo team-item__photo_white">
                             <img src="img/team/team_pic2.png" alt="Ярослав Исаков" class="team-item__pic">
                         </div>
@@ -503,7 +524,7 @@
                         <div class="team-item__descr"></div>
                     </div>
 
-                    <div class="d-flex flex-column team-item">
+                    <div class="d-flex flex-column team-item animate__animated animate__fadeInUp wow">
                         <div class="team-item__photo team-item__photo_white">
                             <img src="img/team/team_pic3.png" alt="Степан Голубев" class="team-item__pic">
                         </div>
@@ -512,7 +533,7 @@
                         <div class="team-item__descr"></div>
                     </div>
 
-                    <div class="d-flex flex-column team-item">
+                    <div class="d-flex flex-column team-item animate__animated animate__fadeInUp wow">
                         <div class="team-item__photo team-item__photo_white">
                             <img src="img/team/team_pic4.png" alt="Андрей Блок" class="team-item__pic">
                         </div>
@@ -521,7 +542,7 @@
                         <div class="team-item__descr"></div>
                     </div>
 
-                    <div class="d-flex flex-column team-item">
+                    <div class="d-flex flex-column team-item animate__animated animate__fadeInUp wow">
                         <div class="team-item__photo team-item__photo_white">
                             <img src="img/team/team_pic5.png" alt="Александр Евсиков" class="team-item__pic">
                         </div>
@@ -530,7 +551,7 @@
                         <div class="team-item__descr"></div>
                     </div>
 
-                    <div class="d-flex flex-column team-item">
+                    <div class="d-flex flex-column team-item animate__animated animate__fadeInUp wow">
                         <div class="team-item__photo team-item__photo_white">
                             <img src="img/team/team_pic6.png" alt="Ярош Анатолий" class="team-item__pic">
                         </div>
@@ -671,6 +692,7 @@
                             <div>E-mail: wildproduction41@gmail.com</div>
                             <div>ИП Иванов И.И., ИНН 410105606011</div>
                             <div>ОГРНИП 306410129700015</div>
+                            <div><a class="footer__link" href="https://www.1cont.ru/contragent/320352500029468">https://www.1cont.ru/contragent/320352500029468</a></div>
                         </div>
                     </div>
                     <div class="d-md-flex justify-content-center align-items-start col-md-6 footer__menu">
@@ -692,6 +714,27 @@
                 </div>
             </div>
         </footer>
+
+        <div class="modal fade request" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title request__title" id="exampleModalLabel">Modal title</h5>
+                  <div class="request__subtitle">Мы свяжемся с вами в течении 24 часов</div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
