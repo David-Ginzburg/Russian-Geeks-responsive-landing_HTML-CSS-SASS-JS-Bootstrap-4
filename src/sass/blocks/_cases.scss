@@ -50,12 +50,6 @@
             opacity: 0.7;
             border-radius: 20px;
         }
-        &:hover .cases-item__bottom-wrapper {
-            opacity: 1;
-        }
-        &:hover .cases-item__top-wrapper {
-            opacity: 0;
-        }
         &__top {
             &-wrapper {
                 width: 100%;
@@ -146,6 +140,12 @@
             grid-template-columns: 1fr 1em 1fr 2em 1fr;
         }
         &-item {
+            &:hover .cases-item__bottom-wrapper {
+                opacity: 1;
+            }
+            &:hover .cases-item__top-wrapper {
+                opacity: 0;
+            }
             &:nth-child(1) {
                 grid-column: 3/5;
             }

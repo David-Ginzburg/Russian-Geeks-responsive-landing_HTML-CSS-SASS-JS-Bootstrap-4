@@ -12,14 +12,6 @@
     &__btn {
         margin-top: 3.88em;
     }
-    &__link {
-        color: var(--clr-light);
-        text-decoration: none;
-        &:hover {
-            color: var(--clr-dark);
-            text-decoration: none;
-        }
-    }
     &__wrapper {
         position: absolute;
         bottom: 0;
