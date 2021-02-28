@@ -2,7 +2,7 @@
     margin-top: 2em;
     padding: 1em;
     padding-top: 20em;
-    min-height: 320em;
+    min-height: 305em;
     background: url('../img/backgrounds_small/cases.png') no-repeat left / 100% 100%;
     &__title {
         color: var(--clr-dark);
@@ -183,10 +183,7 @@
                 grid-column: 1/3;
             }
             &:nth-child(12) {
-                grid-column: 3/5;
-            }
-            &:nth-child(13) {
-                grid-column: 5/6;
+                grid-column: 3/6;
             }
         }
     }

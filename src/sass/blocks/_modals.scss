@@ -82,15 +82,23 @@
     }
     &-descr {
         margin-top: 5em;
+        padding: 0;
         &__title {
             font-size: calc(var(--fs-body) * 1.777);
             font-weight: var(--fw-bold);
+        }
+        &__subtitle {
+            margin-top: 2.5em;
+            font-size: calc(var(--fs-body) * 1.214);
+            font-weight: var(--fw-semi-bold);
+            text-align: center;
         }
         &__text {
             margin-top: 2.5em;
         }
         .btn {
             margin-top: 2.5em;
+            margin-right: 1em;
         }
     }
     &-img {
@@ -101,6 +109,9 @@
             height: 16em;
             border-radius: 100%;
             border: 3px solid var(--clr-orange);
+            &:not(:first-child) {
+                margin-top: 7em;
+            }
             &-inner {
                 width: 13em;
                 height: 13em;
@@ -112,7 +123,7 @@
             position: absolute;
             width: 9em;
             height: 15em;
-            border-radius: 5px;
+            border-radius: 20px;
             box-shadow: 0 0 20px 5px grey;
             &_1 {
                 top: -2em;
@@ -177,6 +188,10 @@
         }
         &-descr {
             margin-top: 2em;
+            padding-left: 1em;
+            &__subtitle {
+                margin-top: 2em;
+            }
             &__text {
                 margin-top: 2em;
             }
@@ -186,9 +201,6 @@
         }
         &-img {
             margin-top: 0;
-            position: absolute;
-            right: 0;
-            top: -1em;
             &__round {
                 width: 20em;
                 height: 20em;
