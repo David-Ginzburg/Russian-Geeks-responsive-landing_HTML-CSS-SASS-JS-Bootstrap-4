@@ -11,6 +11,7 @@
         background-color: var(--clr-purple);
         border-radius: 5px 5px 0px 0px;
         margin: 0 auto;
+        margin-top: 5em;
         width: 90%;
     }
     &-content {
@@ -19,6 +20,26 @@
         padding: 2em;
         margin: 0 auto;
         width: 90%;
+        &_case {
+            position: relative;
+            border: none;
+            border-radius: 20px;
+            margin-top: 5em;
+            color: var(--clr-light);
+            min-height: 80vh;
+            background: url('../img/backgrounds_big/cases_card_stroke.png') no-repeat center / 100% 70%;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                background: linear-gradient(101.31deg, #7063B8 0%, #361D55 100%), #FFFFFF;
+                z-index: -1;
+            }
+        }
     }
     &-header {
         border: none;
@@ -29,16 +50,79 @@
         font-weight: var(--fw-semi-bold);
         line-height: 1.214;
     }
+    &-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 8em;
+        height: 8em;
+        overflow: hidden;
+        border-radius: 100%;
+        background-color: var(--clr-light);
+    }
+    &-logo {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+    }
     .close {
         color: var(--clr-dark);
         span {
             font-size: calc(var(--fs-body) * 2);
+        }
+        &_case {
+            color: var(--clr-light);
         }
     }
     &-subtitle {
         font-size: calc(var(--fs-body) * 1.1666);
         font-weight: var(--fw-regular);
         line-height: 1.214;
+    }
+    &-descr {
+        margin-top: 5em;
+        &__title {
+            font-size: calc(var(--fs-body) * 1.777);
+            font-weight: var(--fw-bold);
+        }
+        &__text {
+            margin-top: 2.5em;
+        }
+        .btn {
+            margin-top: 2.5em;
+        }
+    }
+    &-img {
+        margin-top: 5em;
+        &__round {
+            position: relative;
+            width: 16em;
+            height: 16em;
+            border-radius: 100%;
+            border: 3px solid var(--clr-orange);
+            &-inner {
+                width: 13em;
+                height: 13em;
+                border-radius: 100%;
+                background-color: var(--clr-orange);
+            }
+        }
+        &__pic {
+            position: absolute;
+            width: 9em;
+            height: 15em;
+            border-radius: 5px;
+            box-shadow: 0 0 20px 5px grey;
+            &_1 {
+                top: -2em;
+                right: 0;
+            }
+            &_2 {
+                bottom: -2em;
+                left: 0em;
+            }
+        }
     }
     &-form {
         margin-top: 2em;
@@ -91,6 +175,33 @@
         &-stroke {
             margin-top: 7em;
         }
+        &-descr {
+            margin-top: 2em;
+            &__text {
+                margin-top: 2em;
+            }
+            .btn {
+                margin-top: 2em;
+            }
+        }
+        &-img {
+            margin-top: 0;
+            position: absolute;
+            right: 0;
+            top: -1em;
+            &__round {
+                width: 20em;
+                height: 20em;
+                &-inner {
+                    width: 16em;
+                    height: 16em;
+                }
+            }
+            &__pic {
+                width: 11em;
+                height: 18em;
+            }
+        }
         &-form {
             &__input {
                 width: 31%;
@@ -113,6 +224,21 @@
             max-width: 70%;
             &_case {
                 max-width: 95%;
+            }
+        }
+        &-img {
+            margin-top: 0;
+            &__round {
+                width: 25em;
+                height: 25em;
+                &-inner {
+                    width: 20em;
+                    height: 20em;
+                }
+            }
+            &__pic {
+                width: 13em;
+                height: 22em;
             }
         }
     }
