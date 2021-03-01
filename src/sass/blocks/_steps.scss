@@ -1,4 +1,5 @@
 .steps {
+    position: relative;
     padding: 1em;
     margin-top: 6em;
     &__title {
@@ -31,6 +32,19 @@
                 left: 0;
                 background-color: var(--clr-light);
             }
+        }
+    }
+    &__arrow {
+        position: absolute;
+        top: 35em;
+        cursor: pointer;
+        width: 4em;
+        height: 5em;
+        &_left {
+            left: 0;
+        }
+        &_right {
+            right: 0;
         }
     }
     &-item {
@@ -71,6 +85,9 @@
                     bottom: -1em;
                 }
             }
+        }
+        &__arrow {
+            top: 20em;
         }
         &-item {
             margin-top: 5em;

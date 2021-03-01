@@ -133,6 +133,11 @@
                 bottom: -2em;
                 left: 0em;
             }
+            &_big {
+                box-shadow: none;
+                width: 18em;
+                height: 20em;
+            }
         }
     }
     &-form {
@@ -212,6 +217,10 @@
             &__pic {
                 width: 11em;
                 height: 18em;
+                &_big {
+                    width: 20em;
+                    height: 24em;
+                }
             }
         }
         &-form {
@@ -251,6 +260,10 @@
             &__pic {
                 width: 13em;
                 height: 22em;
+                &_big {
+                    width: 22em;
+                    height: 26em;
+                }
             }
         }
     }

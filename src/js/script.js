@@ -69,3 +69,23 @@ function autoPlayYouTubeModal(){
 $(document).ready(function(){
     autoPlayYouTubeModal()
 })
+
+/* additional steps buttons */
+
+const stepsPills = document.querySelectorAll('.steps__wrapper a')
+
+let stepsIndex = 0;
+
+$('.steps').on( "click", '.steps__arrow_right', function(e){
+    if (stepsIndex !== stepsPills.length - 1) {
+        stepsIndex ++
+        $(stepsPills[stepsIndex]).trigger(e.type)
+    }
+})
+
+$('.steps').on( "click", '.steps__arrow_left', function(e){
+    if (stepsIndex !== 0) {
+        stepsIndex --
+        $(stepsPills[stepsIndex]).trigger(e.type)
+    }
+})
