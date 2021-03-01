@@ -76,6 +76,12 @@ const stepsPills = document.querySelectorAll('.steps__wrapper a')
 
 let stepsIndex = 0;
 
+stepsPills.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        stepsIndex = index
+    })
+})
+
 $('.steps').on( "click", '.steps__arrow_right', function(e){
     if (stepsIndex !== stepsPills.length - 1) {
         stepsIndex ++
