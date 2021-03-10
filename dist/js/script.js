@@ -11,23 +11,24 @@ new WOW().init();
 
 /* quiz */
 
-(function(w, d, s, o){
+  (function(w, d, s, o){
     var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
-        if (document.readyState !== 'loading') Marquiz.init(o);
-        else document.addEventListener("DOMContentLoaded", function() {
-            Marquiz.init(o);
-        });
+      if (document.readyState !== 'loading') Marquiz.init(o);
+      else document.addEventListener("DOMContentLoaded", function() {
+        Marquiz.init(o);
+      });
     };
     d.head.insertBefore(j, d.head.firstElementChild);
   })(window, document, 'script', {
       host: '//quiz.marquiz.ru',
-      id: '603a383d46c60b00440c0711',
-      autoOpen: false,
+      id: '603a048845f8ea0044060b62',
+      autoOpen: 20,
       autoOpenFreq: 'once',
       openOnExit: false,
       disableOnMobile: false
     }
   );
+  
   
 (function(t, p){
     window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function() {
@@ -95,3 +96,92 @@ $('.steps').on( "click", '.steps__arrow_left', function(e){
         $(stepsPills[stepsIndex]).trigger(e.type)
     }
 })
+
+/* validation and send form */
+
+const success = document.querySelector('#success')
+
+const showSuccess = () => {
+    success.style.display="block"
+    success.style.opacity="1"
+    success.classList.add('show')
+    setTimeout(() => {
+        success.style.display="none"
+        success.style.opacity="0"
+        success.classList.remove('show')
+    }, 3000);
+}
+
+function validateForms(form) {
+    $(form).validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: 'required',
+            email: {
+                required: true,
+                email: true
+            },
+            company: {
+                required: true
+            },
+            descr: {
+                required: true,
+                minlength: 10
+            },
+            policy: {
+                required: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Введите ваше имя",
+                minlength: jQuery.validator.format("Нужно ввести как минимум {0} символа")
+            },
+            email: {
+                required: "Введите ваш email",
+                email: "Ваш email должен быть в формате: name@domain.ru"
+            },
+            phone: {
+                required: "Введите ваш мобильный телефон"
+            },
+            company: {
+                required: "Введите название вашей компании"
+            },
+            descr: {
+                required: "Введите описание вашей идеи",
+                minlength: "Описание должно быть не менее 10 символов"
+            },
+            policy: {
+                required: "Примите соглашение"
+            }
+        },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "php/mailer/smart.php",
+                data: $(form).serialize()
+            }).done(function() {
+                showSuccess()
+                $(form).trigger('reset');
+            });
+        }
+    });
+}
+
+validateForms('.development-form');
+validateForms('#assignment-descr');
+validateForms('#assignment-order');
+validateForms('.contacts-form');
+validateForms('#consultation form');
+validateForms('#assignment form');
+
+jQuery(function($){
+    $('input[name=phone]').mask("9 (999) 999-99-99");
+});
+
+$(function ($) {
+    $('.form-url').val(window.location.href);
+});

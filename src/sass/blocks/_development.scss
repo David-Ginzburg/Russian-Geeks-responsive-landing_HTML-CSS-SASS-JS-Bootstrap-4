@@ -48,20 +48,26 @@
             color: var(--clr-light);
             position: absolute;
             right: 0;
-            bottom: 10.5em;
-            height: calc(var(--fz-body) * 11.55);
-            width: calc(var(--fz-body) * 39);
+            bottom: 10em;
+            height: calc(var(--fs-body) * 16);
+            width: calc(var(--fs-body) * 39);
             padding: 2em;
             padding-left: 5em;
             background-color: var(--clr-purple);
             border-top-left-radius: 100em;
             border-bottom-left-radius: 100em;
             &__title {
-                font-size: calc(var(--fz-body) * 1.444);
+                font-size: calc(var(--fs-body) * 1.2);
             }
             &__subtitle {
-                font-size: calc(var(--fz-body) * 1);
+                font-size: calc(var(--fs-body) * 0.8);
                 margin-bottom: 1.444em;
+            }
+            &__wrapper {
+                width: 33%;
+                label.error {
+                    padding: 0.5em 1em 0;
+                }
             }
             &__input {
                 height: 2.8em;
@@ -71,8 +77,34 @@
                 border: none;
                 font-size: calc(var(--fs-body) * 1.142);
             }
+            label.error {
+                line-height: 1.1;
+            }
+            &__checkbox {
+                margin-right: 0.5em;
+            }
+            &__policy {
+                margin-top: 0.5em;
+                &-text {
+                    margin-left: 0.5em;
+                    font-size: calc(var(--fs-body) * 0.614);
+                    font-weight: var(--fw-regular);
+                    color: var(--clr-light);
+                    line-height: 1.4;
+                }
+                &-link {
+                    font-size: calc(var(--fs-body) * 0.614);
+                    font-weight: var(--fw-regular);
+                    color: var(--clr-light);
+                    text-decoration: underline;
+                    &:hover {
+                        color: var(--clr-light);
+                    }
+                }
+            }
             .btn {
                 height: 2.8em;
+                width: 100%;
                 padding-left: 2.5em;
                 padding-right: 2.5em;
             }
@@ -83,7 +115,8 @@
 @media (min-width: 992px) {
     .development {
         &-form {
-            bottom: 13em;
+            bottom: 11em;
+            width: calc(var(--fs-body) * 50);
         }
     }
 }

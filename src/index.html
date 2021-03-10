@@ -71,7 +71,7 @@
                     </li>
                 </ul>
                 <div class="navbar-text d-flex flex-column align-items-center ml-md-auto mr-md-2">
-                    <button type="button" class="btn btn_small">+7 (495) 999-99-99</button>
+                    <button data-toggle="modal" data-target="#consultation" type="button" class="btn btn_small">+7 (911) 440-51-86</button>
                     <span class="menu__text">
                         Заказать звонок
                     </span>
@@ -106,17 +106,35 @@
                     </div>
                     <div class="d-flex flex-column col-md-6">
                         <h2 class="title title_middle">Разработаем ваше приложение в нашей студии <span class="title_yellow">полного цикла</span></h2>
-                        <p class="development__text">Разработка программных решений начиная от планирования, технического задания и бизнес-процессов заканчивая  публикаций и продвижением  вашего приложения точка окупаемость бизнеса до 70% за полгода</p>
+                        <p class="development__text">
+                            Разработка программных решений начинается с планирования и заканчивается публикацией и продвижением вашего мобильного приложения. Окупаемость инвестиций в мобильное приложение составляет до 70% за 6 месяцев.
+                        </p>
                     </div>
                 </div>
             </div>
             <form class="d-none d-md-block development-form">
-                <h2 class="development-form__title">Нет времени читать?</h2>
-                <div class="development-form__subtitle">Узнайте стоимость и сроки уже на первой консультации</div>
+                <h2 class="development-form__title">Хотите обсудить ваш проект?</h2>
+                <div class="development-form__subtitle">Наш специалист поможет вам найти лучшее решение, которое будем выгодно для вас, обозначит примерные сроки и стоимость мобильного приложения уже на первой консультации
+                </div>
                 <div class="d-flex justify-content-between">
-                    <input type="tel" class="development-form__input" placeholder="Телефон" name="phone" required>
-                    <input type="text" class="development-form__input" placeholder="Имя" name="name" required>
-                    <button type="submit" class="btn">Отправить</button>
+                    <div class="development-form__wrapper d-flex flex-column">
+                        <input type="tel" class="development-form__input" placeholder="Телефон" name="phone" required>
+                    </div>
+                    <div class="development-form__wrapper d-flex flex-column">
+                        <input type="text" class="development-form__input" placeholder="Имя" name="name" required>
+                    </div>
+                    <input class="form-url" type="hidden" name="url" value="">
+                    <input type="hidden" name="form-title" value="development">
+                    <div class="d-flex flex-column align-items-center">
+                        <button type="submit" class="btn">Отправить</button>
+                        <div class="d-flex align-items-center justify-content-center development-form__policy">
+                            <input class="development-form__checkbox" type="checkbox" name="policy" required>
+                            <div class="development-form__policy-text">
+                                Соглашаюсь с <a class="development-form__policy-link" href="/policy.html" target="_blank">условиями передачи данных</a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </form>
         </section>
@@ -153,7 +171,7 @@
                         <div class="d-flex flex-column col-md-6">
                             <h3 class="services-block__title title title_small"><span class="title_yellow">Приложение</span> лояльности</h3>
                             <p class="services-block__text">
-                                Приложения лояльности помогают несравненно улучшать ваше взаимодействие с пользователем, заставить вернуться в ваш магазин, сделать очередную покупку и никогда не забывать про то что вы существуете. постоянные акции бонусы помогают очень сильно увеличить процент повторяющихся клиентов в ваших организациях.
+                                Приложения лояльности помогает несравненно улучшать ваше взаимодействие с пользователем, заставить вернуться в ваш магазин, сделать очередную покупку и никогда не забывать про то, что вы существуете. Постоянные акции, бонусы помогают очень сильно увеличить процент повторяющихся клиентов в ваших организациях.
                             </p>
                             <div class="d-flex flex-column flex-md-row w-100 services-block__btns">
                                 <button data-toggle="modal" data-target="#consultation" class="btn btn_small">Подробнее</button>
@@ -172,9 +190,9 @@
                     <div class="row no-gutters">
                         <div class="d-flex flex-column col-md-6 order-1">
                             <h3 class="services-block__title title title_small"><span class="title_yellow">Коммерческие</span> разработки</h3>
-                            <div class="services-block__subtitle title">Интернет-магазины тири</div>
+                            <div class="services-block__subtitle title">Интернет-магазины</div>
                             <p class="services-block__text">
-                                Мы создаем решения для корпоративных компаний, чтобы улучшить взаимодействие вашей компании с пользователями и несравненно увеличить рейтинг вашей организации перед вашими клиентами. также корпоративные разработка приложений помогает несравненно сильно удерживать пользователе.
+                                Мы создаем решения для корпоративных компаний, чтобы улучшить взаимодействие вашей компании с пользователями и несравненно увеличить рейтинг вашей организации перед вашими клиентами. Также, корпоративная разработка приложений помогает на много дольше удерживать пользователя.
                             </p>
                             <div class="d-flex flex-column flex-md-row w-100 services-block__btns">
                                 <button data-toggle="modal" data-target="#consultation" class="btn btn_small">Подробнее</button>
@@ -194,7 +212,7 @@
                         <div class="d-flex flex-column col-md-6">
                             <h3 class="services-block__title title title_small"><span class="title_yellow">Автоматизация</span> бизнес-процесса</h3>
                             <p class="services-block__text">
-                                Мобильное приложение также помогают автоматизировать и усовершенствовать ваши бизнес-процессы точка будто взаимодействие с курьерами, работниками ми-ми или просто процессами документооборота в вашей компании, всё это может быть на высочайшем уровне с помощью наших мобильных разработок для вашего бизнеса.
+                                Мобильное приложение также помогает автоматизировать и усовершенствовать ваши бизнес-процессы будь то взаимодействие с курьерами, работниками или просто процессами документооборота в вашей компании. Всё это может быть на высочайшем уровне с помощью наших мобильных разработок для вашего бизнеса.
                             </p>
                             <div class="d-flex flex-column flex-md-row w-100 services-block__btns">
                                 <button data-toggle="modal" data-target="#consultation" class="btn btn_small">Подробнее</button>
@@ -226,7 +244,7 @@
                         <a class="nav-link" id="pills-testing-tab" data-toggle="pill" href="#pills-testing" role="tab" aria-controls="pills-testing" aria-selected="false">Тестирование</a>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-papers-tab" data-toggle="pill" href="#pills-papers" role="tab" aria-controls="pills-papers" aria-selected="false">Сдача Актов и этапов</a>
+                        <a class="nav-link" id="pills-papers-tab" data-toggle="pill" href="#pills-papers" role="tab" aria-controls="pills-papers" aria-selected="false">Утверждение результатов</a>
                       </li>
                       <li class="nav-item" role="presentation">
                         <a class="nav-link" id="pills-publication-tab" data-toggle="pill" href="#pills-publication" role="tab" aria-controls="pills-publication" aria-selected="false">Публикация<br> и продвижение</a>
@@ -297,9 +315,9 @@
                             <div class="row no-gutters flex-column flex-md-row align-items-center align-items-md-start justify-content-around">
                                 <img src="img/design_documentation_publication_steps.png" alt="documentation" class="steps-item__pic">
                                 <div class="d-flex flex-column col-md-6">
-                                    <h3 class="steps-item__title title title_small">Сдача <span class="title_yellow">Актов</span> и <span class="title_yellow">этапов</span></h3>
+                                    <h3 class="steps-item__title title title_small">Утверждение <span class="title_yellow">результатов</span></h3>
                                     <p class="steps-item__text">
-                                        Сдача актов этапов-это важнейшая часть разработки, потому что программные продукты включают в себя разработку разных типов,  из-за Чего чаще всего приходится останавливаться на одной части проект, и работать над другой. Именно для этого важно чтобы эти части были задокументированы и сохранены.
+                                        Утверждение результатов -это важнейшая часть разработки, которая включает в себя сверку актов и этапов проведенных работ. Программные продукты включают в себя разработку разных типов, из-за этого часто приходится останавливаться на одной части проекта, и работать над другой. Именно для этого важно чтобы эти части были задокументированы и сохранены.
                                     </p>
                                 </div>
                             </div>
@@ -361,10 +379,24 @@
                         <h2 class="title assignment-item__title">Получите пример <span class="title_yellow">техничекого задания</span></h2>
                         <p class="assignment-item__text">Наши ТЗ  разработано таким образом, чтобы не только дать понять полный объём разработке, но и чтобы не забыть про какие-то мелочи и другие вещи важные для целостности проекта</p>
                         <p class="assignment-item__text-small">Отправьте нам свою почту и получите <span class="title_yellow">пример ТЗ</span></p>
-                        <form class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
-                            <input type="email" class="assignment-item__input" placeholder="Почта" name="email" required>
-                            <input type="text" class="assignment-item__input" placeholder="Имя" name="name" required>
-                            <button type="submit" class="btn">Отправить</button>
+                        <form id="assignment-descr" class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
+                            <div class="assignment-item__form-wrapper d-flex flex-column">
+                                <input type="email" class="assignment-item__input" placeholder="Почта" name="email" required>
+                            </div>
+                            <div class="assignment-item__form-wrapper d-flex flex-column">
+                                <input type="text" class="assignment-item__input" placeholder="Имя" name="name" required>
+                            </div>
+                            <input class="form-url" type="hidden" name="url" value="">
+                            <input type="hidden" name="form-title" value="description">
+                            <div class="d-flex flex-column align-items-center assignment-item__form-wrapper">
+                                <button type="submit" class="btn">Отправить</button>
+                                <div class="d-flex align-items-center justify-content-center assignment-item__form-policy">
+                                    <input class="assignment-item__form-checkbox" type="checkbox" name="policy" required>
+                                    <div class="assignment-item__form-policy-text">
+                                        Соглашаюсь с <a class="assignment-item__form-policy-link" href="/policy.html" target="_blank">условиями передачи данных</a>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <div class="offset-md-1 col-md-4 assignment-item__wrapper">
@@ -377,10 +409,24 @@
                         <h2 class="title assignment-item__title">Получите пример <span class="title_yellow">договора</span></h2>
                         <p class="assignment-item__text">Наши ТЗ  разработано таким образом, чтобы не только дать понять полный объём разработке, но и чтобы не забыть про какие-то мелочи и другие вещи важные для целостности проекта</p>
                         <p class="assignment-item__text-small">Отправьте нам свою почту и получите <span class="title_yellow">пример договора</span></p>
-                        <form class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
-                            <input type="email" class="assignment-item__input" placeholder="Почта" name="email" required>
-                            <input type="text" class="assignment-item__input" placeholder="Имя" name="name" required>
-                            <button type="submit" class="btn">Отправить</button>
+                        <form id="assignment-order" class="d-flex flex-column flex-md-row align-items-start justify-content-md-between assignment-item__form">
+                            <div class="assignment-item__form-wrapper d-flex flex-column">
+                                <input type="email" class="assignment-item__input" placeholder="Почта" name="email" required>
+                            </div>
+                            <div class="assignment-item__form-wrapper d-flex flex-column">
+                                <input type="text" class="assignment-item__input" placeholder="Имя" name="name" required>
+                            </div>
+                            <input class="form-url" type="hidden" name="url" value="">
+                            <input type="hidden" name="form-title" value="order">
+                            <div class="d-flex flex-column align-items-center assignment-item__form-wrapper">
+                                <button type="submit" class="btn">Отправить</button>
+                                <div class="d-flex align-items-center justify-content-center mt-1">
+                                    <input class="assignment-item__form-checkbox" type="checkbox" name="policy" required>
+                                    <div class="assignment-item__form-policy-text">
+                                        Соглашаюсь с <a class="assignment-item__form-policy-link" href="/policy.html" target="_blank">условиями передачи данных</a>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <div class="col-md-4 order-md-0 assignment-item__wrapper assignment-item__wrapper_wide">
@@ -1303,12 +1349,12 @@
 
                     <div class="card faq-item">
                       <div class="card-header d-flex align-items-center faq-item__header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="dialog">
-                        <h3 class="faq-item__title">Что делать если я не совсем понимаю что я хочу?</h3>
+                        <h3 class="faq-item__title">Я не до конца понимаю что мне нужно. Что делать?</h3>
                         <div class="faq-item__sign"></div>
                       </div>
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faq">
-                        <div class="card-body faq-item__body">
-                            Именно для этого мы есть, чтобы сформировать и упаковать ваши желания.  наш менеджер раз просит Вас обо всём и сможет сформировать для вас предложения, которая будет максимально решать вашу проблему. а далее мы разработаем для вас дизайн и техническое задание ровно под эту цель.
+                        <div class="card-body faq-item__body">             
+                            Правильно, что вы обратились именно к нам! Наш менеджер поможет вам сформировать ваше желание в полноценную идею, которая в будущем решит вашу проблему. После общения с менеджером мы сможем написать ТЗ, разработать дизайн и приступить к работе над вашим будущим мобильным приложением.
                         </div>
                       </div>
                     </div>
@@ -1320,7 +1366,7 @@
                       </div>
                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq">
                         <div class="card-body faq-item__body">
-                            Оплата происходит поэтапно, при том что после каждого этапа выполненных работ, У вас есть возможность проверить и протестировать функционал чтобы убедиться что мы действительно выполнили именно то что описано в ТЗ и Сделано в дизайне.
+                            Оплата происходит поэтапно. После каждого этапа выполненных работ у вас есть возможность проверить и протестировать функционал, чтобы убедиться, что мы действительно выполнили именно то, что описано в ТЗ.
                         </div>
                       </div>
                     </div>
@@ -1332,7 +1378,7 @@
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq">
                           <div class="card-body faq-item__body">
-                              Чтобы начать чаще всего требуется лишь ваше умение объяснить и пообщаться с менеджером, а наш бизнес-аналитик уже сможет сформировать и Правильно оценить то что менеджер передаст для нас. не забывайте-менеджер это тот человек который будет всегда с вами.
+                            Чтобы начать чаще всего требуется лишь ваше умение объяснить и пообщаться с менеджером, а наш бизнес-аналитик уже сможет сформировать и правильно оценить то,что менеджер передаст для нас. Не забывайте - менеджер всегда рядом с вами.
                           </div>
                         </div>
                     </div>
@@ -1344,7 +1390,7 @@
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faq">
                           <div class="card-body faq-item__body">
-                            Каждое приложение уникально, мы не можем сказать Какие точные сроки есть точка но чаще всего мы знаем, что потребуется для идеального продукта достаточное время чтобы протестировать И адаптировать всё для ВАШИХ КЛИЕНТОВ.
+                            Каждое приложение уникально, поэтому примерные сроки устанавливаются на этапе написания коммерческого предложения и ТЗ.
                           </div>
                         </div>
                     </div>
@@ -1356,7 +1402,7 @@
                         </div>
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faq">
                           <div class="card-body faq-item__body">
-                            Для этого у нас есть система решений, в договоре чаще всего разрешается некоторый объем дополнительного функционала, который может быть расширен. мы очень лояльно относимся к доработкам и правкам тз, поэтому вы можете нам доверять.
+                            Для этого у нас есть система решений. В договоре чаще всего допускается некоторый объем дополнительного функционала, который может быть расширен. Мы очень лояльно относимся к доработкам и правкам тз, поэтому вы можете нам доверять.
                           </div>
                         </div>
                     </div>
@@ -1398,11 +1444,13 @@
                                 <input type="text" class="contacts-form__input" placeholder="Ваше имя" name="name" required>
                                 <input type="text" class="contacts-form__input" placeholder="Компания" name="company" required>
                                 <input type="email" class="contacts-form__input" placeholder="Почта" name="email" required>
-                                <textarea cols="30" rows="5" class="contacts-form__textarea" name="text" placeholder="Описание идеи" required></textarea>
+                                <textarea cols="30" rows="5" class="contacts-form__textarea" name="descr" placeholder="Описание идеи" required></textarea>
                             </div>
                             <div class="d-flex justify-content-between align-items-center contacts-form__submit">
                                 <input type="checkbox" class="contacts-form__checkbox" name="policy" required>
-                                <div class="contacts-form__text">Соглашаюсь на <a class="contacts-form__link" href=# target="_blank">Terms and Conditions</a></div>
+                                <div class="contacts-form__text">Соглашаюсь c <a class="contacts-form__link" href="/policy.html" target="_blank">условиями передачи данных</a></div>
+                                <input class="form-url" type="hidden" name="url" value="">
+                                <input type="hidden" name="form-title" value="contacts">
                                 <button class="btn" type="submit">Отправить</button>
                             </div>
                         </form>
@@ -1419,11 +1467,10 @@
                             <img class="footer__logo-img" src="icons/logo.png" alt="logo">
                         </div>
                         <div class="footer__contacts-items">
-                            <div>Телефон: +7 978 924 34 34</div>
-                            <div>Viber/What's App: +7 978 924 34 34</div>
-                            <div>E-mail: wildproduction41@gmail.com</div>
-                            <div><a class="footer__link" href="https://www.1cont.ru/contragent/320352500029468">ИП Иванов И.И., ИНН 410105606011</a></div>
-                            <div><a class="footer__link" href="https://www.1cont.ru/contragent/320352500029468">ОГРНИП 306410129700015</a></div>
+                            <div>Телефон и мессенджеры +7 (911) 440-51-86</div>
+                            <div>E-mail: info@russiangeeks.com</div>
+                            <div><a class="footer__link" href="https://www.1cont.ru/contragent/320352500029468">ИП Голубев С.С. ИНН 352523911749</a></div>
+                            <div><a class="footer__link" href="https://www.1cont.ru/contragent/320352500029468">ОГРНИП 320352500029468</a></div>
                         </div>
                     </div>
                     <div class="d-md-flex justify-content-center align-items-start col-md-6 footer__menu">
@@ -1436,7 +1483,7 @@
                             <div class="d-none d-md-block footer__menu-item"><a class="footer__menu-link" href="#steps">Процесс разработки</a></div>
                             <div class="d-none d-md-block footer__menu-item"><a class="footer__menu-link" href="#team">Команда</a></div>
                             <div class="align-self-end footer__documents">
-                                <div class="footer__document"><a class="footer__document-link" href="#" target="_blank">Политика конфеденциальности</a></div>
+                                <div class="footer__document"><a class="footer__document-link" href="/policy.html" target="_blank">Политика конфеденциальности</a></div>
                                 <div class="footer__document"><a class="footer__document-link" href="#" target="_blank">Договор оферты</a></div>
                             </div>
                         </div>
@@ -1476,14 +1523,20 @@
                     <div class="modal-body">
                         <div class="modal-subtitle">Мы свяжемся с вами в течении 24 часов</div>
                         <form class="d-flex flex-column flex-md-row justify-content-md-between modal-form">
-                            <input type="tel" name="tel" class="modal-form__input modal-form__input_tel" placeholder="+7 (___) ___-__-__" required>
-                            <input type="text" name="name" class="modal-form__input modal-form__input_name" placeholder="Ваше имя" required>
+                            <div class="modal-form__wrapper d-flex flex-column">
+                                <input type="tel" name="phone" class="modal-form__input modal-form__input_tel" placeholder="Телефон" required>
+                            </div>
+                            <div class="modal-form__wrapper d-flex flex-column">
+                                <input type="text" name="name" class="modal-form__input modal-form__input_name" placeholder="Ваше имя" required>
+                            </div>
                             <div class="d-flex flex-column modal-form__submit">
+                                <input class="form-url" type="hidden" name="url" value="">
+                                <input type="hidden" name="form-title" value="consultation">
                                 <button class="btn modal-form__btn">Оставить заявку</button>
                                 <div class="d-flex align-items-center justify-content-md-center modal-form__policy">
                                     <input class="modal-form__checkbox" type="checkbox" name="policy" required>
                                     <div class="modal-form__policy-text">
-                                        Соглашаюсь с <a class="modal-form__policy-link" href="#" target="_blank">условиями передачи данных</a>
+                                        Соглашаюсь с <a class="modal-form__policy-link" href="/policy.html" target="_blank">условиями передачи данных</a>
                                     </div>
                                 </div>
                             </div>
@@ -1505,14 +1558,20 @@
                     </div>
                     <div class="modal-body">
                         <form class="d-flex flex-column flex-md-row justify-content-md-between modal-form">
-                            <input type="email" name="email" class="modal-form__input modal-form__input_tel" placeholder="name@domen.ru" required>
-                            <input type="text" name="name" class="modal-form__input modal-form__input_name" placeholder="Ваше имя" required>
+                            <div class="modal-form__wrapper d-flex flex-column">
+                                <input type="email" name="email" class="modal-form__input modal-form__input_tel" placeholder="name@domen.ru" required>
+                            </div>
+                            <div class="modal-form__wrapper d-flex flex-column">
+                                <input type="text" name="name" class="modal-form__input modal-form__input_name" placeholder="Ваше имя" required>
+                            </div>
                             <div class="d-flex flex-column modal-form__submit">
+                                <input class="form-url" type="hidden" name="url" value="">
+                                <input type="hidden" name="form-title" value="assignment">
                                 <button class="btn modal-form__btn">Отправить</button>
                                 <div class="d-flex align-items-center justify-content-md-center modal-form__policy">
                                     <input class="modal-form__checkbox" type="checkbox" name="policy" required>
                                     <div class="modal-form__policy-text">
-                                        Соглашаюсь с <a class="modal-form__policy-link" href="#" target="_blank">условиями передачи данных</a>
+                                        Соглашаюсь с <a class="modal-form__policy-link" href="/policy.html" target="_blank">условиями передачи данных</a>
                                     </div>
                                 </div>
                             </div>
@@ -1522,8 +1581,24 @@
             </div>
         </div>
 
+        <div class="modal fade" id="success">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-stroke"></div>
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title">Ваши данные успешно получены</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Пожалуйста ожидайте, наши менеджеры с вами свяжутся</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
     </main>
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>

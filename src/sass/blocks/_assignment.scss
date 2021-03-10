@@ -21,6 +21,31 @@
         }
         &__form {
             width: 40%;
+            &-wrapper {
+                width: 100%;
+            }
+            &-checkbox {
+                margin-right: 0.5em;
+            }
+            &-policy {
+                margin-top: 0.5em;
+                &-text {
+                    margin-left: 0.5em;
+                    font-size: calc(var(--fs-body) * 0.614);
+                    font-weight: var(--fw-regular);
+                    color: var(--clr-light);
+                    line-height: 1.4;
+                }
+                &-link {
+                    font-size: calc(var(--fs-body) * 0.614);
+                    font-weight: var(--fw-regular);
+                    color: var(--clr-light);
+                    text-decoration: underline;
+                    &:hover {
+                        color: var(--clr-light);
+                    }
+                }
+            }
         }
         &__input {
             width: 100%;
@@ -30,6 +55,7 @@
             border-bottom: 1px solid var(--clr-light);
             background-color: var(--clr-purple);
             color: var(--clr-light);
+            outline: none;
             &::placeholder {
                 color: var(--clr-light);
                 opacity: 0.7;
@@ -67,7 +93,10 @@
             min-height: 32em;
             padding: 0;
             &__form {
-                width: 50%;
+                width: 100%;
+                &-wrapper {
+                    width: 40%;
+                }
             }
             &__wrapper {
                 right: 0;
@@ -102,8 +131,10 @@
                 }
             }
             &__form {
-                width: 100%;
                 margin-top: 1em;
+                &-wrapper {
+                    width: 27%;
+                }
             }
             &__wrapper {
                 position: static;
@@ -114,12 +145,6 @@
             }
             &__pic {
                 transform: rotateY(0deg);
-            }
-            &__input {
-                width: 27%;
-            }
-            .btn {
-                width: 27%;
             }
         }
     }
