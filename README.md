@@ -1,1 +1,1 @@
-https://vadim-mostovenko.github.io/Russian-Geeks-responsive-landding_HTML-CSS-SASS-JS-Bootstrap-4/dist/
+https://vadim-mostovenko.github.io/Russian-Geeks-responsive-landing_HTML-CSS-SASS-JS-Bootstrap-4/dist/
